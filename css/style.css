@@ -41,6 +41,7 @@ p {
 img {
   /* Set max width to be 100% of the containing element */
   max-width: 100%;
+  border-width: 3px;
 }
 
 h1 {
@@ -50,6 +51,7 @@ h1 {
 
 h2 {
   /* Set font color to be red (BONUS: try using a hex code like #e51b24!) */
+  color: purple;
 }
 
 footer {
