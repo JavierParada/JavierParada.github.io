@@ -1,0 +1,42 @@
+/* *{
+    padding: 0.1;
+    margin: 0.1;
+}*/
+
+/* body{
+    color: blue;
+    width: 800px; 
+    background-color: pink; 
+} */
+
+img{
+    width: 400px;
+}
+
+.container{
+    width: 800px;
+    outline: 1px dotted rebeccapurple;
+    margin: 0 auto;
+}
+
+.red{
+    color: red;
+}
+
+h1{
+    display: inline-block;
+    padding: 3px;
+}
+
+p{
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+table{
+    width: 600px;
+}
+
+td, th{
+    text-transform: uppercase;
+}
