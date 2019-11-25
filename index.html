@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>    
+    <title>Current projects</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
@@ -15,7 +16,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_23090477d7704f7dac3334c12184e37a {
+            <style> #map_sar {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -26,8 +27,10 @@
         
 </head>
 <body>    
-    
-            <div class="folium-map" id="map_23090477d7704f7dac3334c12184e37a" ></div>
+            <h1> List of current projects (November, 2019) </h1>
+            <iframe src="candy.html" width="800" height="200"></iframe>
+            <div id="map_sar" style="width: 800; height: 800; position: relative; outline: none;" class="leaflet-container leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag" ></div>
+
         
 </body>
 <script>    
@@ -37,8 +40,8 @@
                 var bounds = null;
             
 
-            var map_23090477d7704f7dac3334c12184e37a = L.map(
-                                  'map_23090477d7704f7dac3334c12184e37a',
+            var map_sar = L.map(
+                                  'map_sar',
                                   {center: [20,0],
                                   zoom: 40,
                                   maxBounds: bounds,
@@ -52,37 +55,38 @@
             var tile_layer_e9c410b5e3824eca921f65f075013c6c = L.tileLayer(
                 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
                 {
-  "attribution": null,
-  "detectRetina": false,
-  "maxZoom": 18,
-  "minZoom": 1,
-  "noWrap": false,
-  "subdomains": "abc"
-}
-                ).addTo(map_23090477d7704f7dac3334c12184e37a);
+                "attribution": null,
+                "detectRetina": false,
+                "maxZoom": 18,
+                "minZoom": 1,
+                "noWrap": false,
+                "subdomains": "abc"
+                }
+                ).addTo(map_sar);
         
 
-L.marker([19.0728302, 72.8826065]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Mumbai</b>").openPopup();
-L.marker([28.6519508, 77.2314911]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Delhi</b>").openPopup();
-L.marker([12.97194, 77.593689]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Bengaluru</b>").openPopup();
-L.marker([22.5626297, 88.3630371]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Kolkata</b>").openPopup();
-L.marker([13.0878401, 80.2784729]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Chennai</b>").openPopup();
-L.marker([23.0257893, 72.5872726]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Ahmedabad</b>").openPopup();
-L.marker([17.3840504, 78.4563599]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Hyderabad</b>").openPopup();
-L.marker([18.5195694, 73.8553467]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Pune</b>").openPopup();
-L.marker([21.19594, 72.8302307]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Surat</b>").openPopup();
-L.marker([26.4652309, 80.3497467]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Kanpur</b>").openPopup();
-L.marker([26.9196205, 75.7878113]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Jaipur</b>").openPopup();
-L.marker([19.0368099, 73.0158234]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Navi Mumbai</b>").openPopup();
-L.marker([26.8392792, 80.9231262]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Lucknow</b>").openPopup();
-L.marker([21.1463108, 79.0849075]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Nagpur</b>").openPopup();
-L.marker([22.7179203, 75.8332977]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Indore</b>").openPopup();
-L.marker([25.59408, 85.1356277]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Patna</b>").openPopup();
-L.marker([23.2546902, 77.4028931]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Bhopal</b>").openPopup();
-L.marker([30.9120407, 75.8537903]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Ludhiana</b>").openPopup();
-L.marker([8.7274199, 77.6837997]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Tirunelveli</b>").openPopup();
-L.marker([27.1833305, 78.0166702]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Agra</b>").openPopup();
-L.marker([22.2994099, 73.2081223]).addTo(map_23090477d7704f7dac3334c12184e37a).bindPopup("<b>Vadodara</b>").openPopup();
+L.marker([19.0728302, 72.8826065]).addTo(map_sar).bindPopup("<b>Mumbai</b>").openPopup();
+L.marker([28.6519508, 77.2314911]).addTo(map_sar).bindPopup("<b>Delhi</b>").openPopup();
+L.marker([12.97194, 77.593689]).addTo(map_sar).bindPopup("<b>Bengaluru</b>").openPopup();
+L.marker([22.5626297, 88.3630371]).addTo(map_sar).bindPopup("<b>Kolkata</b>").openPopup();
+L.marker([13.0878401, 80.2784729]).addTo(map_sar).bindPopup("<b>Chennai</b>").openPopup();
+L.marker([23.0257893, 72.5872726]).addTo(map_sar).bindPopup("<b>Ahmedabad</b>").openPopup();
+L.marker([17.3840504, 78.4563599]).addTo(map_sar).bindPopup("<b>Hyderabad</b>").openPopup();
+L.marker([18.5195694, 73.8553467]).addTo(map_sar).bindPopup("<b>Pune</b>").openPopup();
+L.marker([21.19594, 72.8302307]).addTo(map_sar).bindPopup("<b>Surat</b>").openPopup();
+L.marker([26.4652309, 80.3497467]).addTo(map_sar).bindPopup("<b>Kanpur</b>").openPopup();
+L.marker([26.9196205, 75.7878113]).addTo(map_sar).bindPopup("<b>Jaipur</b>").openPopup();
+L.marker([19.0368099, 73.0158234]).addTo(map_sar).bindPopup("<b>Navi Mumbai</b>").openPopup();
+L.marker([26.8392792, 80.9231262]).addTo(map_sar).bindPopup("<b>Lucknow</b>").openPopup();
+L.marker([21.1463108, 79.0849075]).addTo(map_sar).bindPopup("<b>Nagpur</b>").openPopup();
+L.marker([22.7179203, 75.8332977]).addTo(map_sar).bindPopup("<b>Indore</b>").openPopup();
+L.marker([25.59408, 85.1356277]).addTo(map_sar).bindPopup("<b>Patna</b>").openPopup();
+L.marker([23.2546902, 77.4028931]).addTo(map_sar).bindPopup("<b>Bhopal</b>").openPopup();
+L.marker([30.9120407, 75.8537903]).addTo(map_sar).bindPopup("<b>Ludhiana</b>").openPopup();
+L.marker([8.7274199, 77.6837997]).addTo(map_sar).bindPopup("<b>Tirunelveli</b>").openPopup();
+L.marker([27.1833305, 78.0166702]).addTo(map_sar).bindPopup("<b>Agra</b>").openPopup();
+L.marker([22.2994099, 73.2081223]).addTo(map_sar).bindPopup("<b>Vadodara</b>").openPopup();
 
 
 </script>
+
