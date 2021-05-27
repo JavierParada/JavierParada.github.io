@@ -1,0 +1,218 @@
+﻿Original order,Code,Country,Order,Continent,Wikipedia
+1,AFG,Afghanistan,102,Asia,https://en.wikipedia.org/wiki/Afghanistan
+2,ALB,Albania,75,Europe,https://en.wikipedia.org/wiki/Albania
+3,DZA,Algeria,141,Africa,https://en.wikipedia.org/wiki/Algeria
+4,ASM,American Samoa,A1,Other,https://en.wikipedia.org/wiki/American_Samoa
+5,AND,Andorra,62,Europe,https://en.wikipedia.org/wiki/Andorra
+6,AGO,Angola,180,Africa,https://en.wikipedia.org/wiki/Angola
+7,ATG,Antigua and Barbuda,16,North America,https://en.wikipedia.org/wiki/Antigua_and_Barbuda
+8,ARG,Argentina,35,South America,https://en.wikipedia.org/wiki/Argentina 
+9,ARM,Armenia,82,Asia,https://en.wikipedia.org/wiki/Armenia
+10,ABW,Aruba,A2,Other,https://en.wikipedia.org/wiki/Aruba
+11,AUS,Australia,128,Oceania,https://en.wikipedia.org/wiki/Australia
+12,AUT,Austria,53,Europe,https://en.wikipedia.org/wiki/Austria
+13,AZE,Azerbaijan,83,Asia,https://en.wikipedia.org/wiki/Azerbaijan
+14,BHS,"Bahamas, The",11,North America,https://en.wikipedia.org/wiki/The_Bahamas
+15,BHR,Bahrain,92,Asia,https://en.wikipedia.org/wiki/Bahrain
+16,BGD,Bangladesh,107,Asia,https://en.wikipedia.org/wiki/Bangladesh
+17,BRB,Barbados,17,North America,https://en.wikipedia.org/wiki/Barbados
+18,BLR,Belarus,46,Europe,https://en.wikipedia.org/wiki/Belarus
+19,BEL,Belgium,58,Europe,https://en.wikipedia.org/wiki/Belgium
+20,BLZ,Belize,5,North America,https://en.wikipedia.org/wiki/Belize
+21,BEN,Benin,157,Africa,https://en.wikipedia.org/wiki/Benin
+22,BMU,Bermuda,A3,Other,https://en.wikipedia.org/wiki/Bermuda
+23,BTN,Bhutan,106,Asia,https://en.wikipedia.org/wiki/Bhutan
+24,BOL,Bolivia,31,South America,https://en.wikipedia.org/wiki/Bolivia 
+25,BIH,Bosnia and Herzegovina,72,Europe,https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina
+26,BWA,Botswana,183,Africa,https://en.wikipedia.org/wiki/Botswana
+27,BRA,Brazil,28,South America,https://en.wikipedia.org/wiki/Brazil
+28,VGB,British Virgin Islands,A4,Other,https://en.wikipedia.org/wiki/British_Virgin_Islands
+29,BRN,Brunei Darussalam,123,Asia,https://en.wikipedia.org/wiki/Brunei
+30,BGR,Bulgaria,77,Europe,https://en.wikipedia.org/wiki/Bulgaria
+31,BFA,Burkina Faso,147,Africa,https://en.wikipedia.org/wiki/Burkina_Faso
+32,BDI,Burundi,176,Africa,https://en.wikipedia.org/wiki/Burundi
+33,CPV,Cabo Verde,189,Africa,https://en.wikipedia.org/wiki/Cape_Verde
+34,KHM,Cambodia,118,Asia,https://en.wikipedia.org/wiki/Cambodia
+35,CMR,Cameroon,162,Africa,https://en.wikipedia.org/wiki/Cameroon
+36,CAN,Canada,1,North America,https://en.wikipedia.org/wiki/Canada
+37,CYM,Cayman Islands,A5,Other,https://en.wikipedia.org/wiki/Cayman_Islands
+38,CAF,Central African Republic,161,Africa,https://en.wikipedia.org/wiki/Central_African_Republic
+39,TCD,Chad,160,Africa,https://en.wikipedia.org/wiki/Chad
+40,CHI,Channel Islands,A6,Other,https://en.wikipedia.org/wiki/Channel_Islands
+41,CHL,Chile,34,South America,https://en.wikipedia.org/wiki/Chile
+42,CHN,China,111,Asia,https://en.wikipedia.org/wiki/China
+43,COL,Colombia,24,South America,https://en.wikipedia.org/wiki/Colombia
+44,COM,Comoros,192,Africa,https://en.wikipedia.org/wiki/Comoros
+45,COD,"Congo, Dem. Rep.",166,Africa,https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo
+46,COG,"Congo, Rep.",165,Africa,https://en.wikipedia.org/wiki/Republic_of_the_Congo
+47,CRI,Costa Rica,9,North America,https://en.wikipedia.org/wiki/Costa_Rica
+48,CIV,Cote d'Ivoire,154,Africa,https://en.wikipedia.org/wiki/Ivory_Coast
+49,HRV,Croatia,71,Europe,https://en.wikipedia.org/wiki/Croatia
+50,CUB,Cuba,12,North America,https://en.wikipedia.org/wiki/Cuba
+51,CUW,Curacao,A7,Other,https://en.wikipedia.org/wiki/Curacao
+52,CYP,Cyprus,79,Europe,https://en.wikipedia.org/wiki/Cyprus
+53,CZE,Czech Republic,51,Europe,https://en.wikipedia.org/wiki/Czech_Republic
+54,DNK,Denmark,55,Europe,https://en.wikipedia.org/wiki/Denmark
+55,DJI,Djibouti,173,Africa,https://en.wikipedia.org/wiki/Djibouti
+56,DMA,Dominica,18,North America,https://en.wikipedia.org/wiki/Dominica
+57,DOM,Dominican Republic,15,North America,https://en.wikipedia.org/wiki/Dominican_Republic
+58,ECU,Ecuador,29,South America,https://en.wikipedia.org/wiki/Ecuador
+59,EGY,"Egypt, Arab Rep.",144,Africa,https://en.wikipedia.org/wiki/Egypt
+60,SLV,El Salvador,6,North America,https://en.wikipedia.org/wiki/El_Salvador
+61,GNQ,Equatorial Guinea,163,Africa,https://en.wikipedia.org/wiki/Equatorial_Guinea
+62,ERI,Eritrea,172,Africa,https://en.wikipedia.org/wiki/Eritrea
+63,EST,Estonia,45,Europe,https://en.wikipedia.org/wiki/Estonia
+64,SWZ,Eswatini,187,Africa,https://en.wikipedia.org/wiki/Eswatini
+65,ETH,Ethiopia,171,Africa,https://en.wikipedia.org/wiki/Ethiopia
+66,FRO,Faroe Islands,A8,Other,https://en.wikipedia.org/wiki/Faroe_Islands
+67,FJI,Fiji,130,Oceania,https://en.wikipedia.org/wiki/Fiji
+68,FIN,Finland,41,Europe,https://en.wikipedia.org/wiki/Finland
+69,FRA,France,60,Europe,https://en.wikipedia.org/wiki/France
+70,PYF,French Polynesia,A9,Other,https://en.wikipedia.org/wiki/French_Polynesia
+71,GAB,Gabon,164,Africa,https://en.wikipedia.org/wiki/Gabon
+72,GMB,"Gambia, The",149,Africa,https://en.wikipedia.org/wiki/The_Gambia
+73,GEO,Georgia,81,Asia,https://en.wikipedia.org/wiki/Georgia_(country)
+74,DEU,Germany,56,Europe,https://en.wikipedia.org/wiki/Germany
+75,GHA,Ghana,155,Africa,https://en.wikipedia.org/wiki/Ghana
+76,GIB,Gibraltar,A10,Other,https://en.wikipedia.org/wiki/Gibraltar
+77,GRC,Greece,78,Europe,https://en.wikipedia.org/wiki/Greece
+78,GRL,Greenland,A11,Other,https://en.wikipedia.org/wiki/Greenland
+79,GRD,Grenada,19,North America,https://en.wikipedia.org/wiki/Grenada
+80,GUM,Guam,A12,Other,https://en.wikipedia.org/wiki/Guam
+81,GTM,Guatemala,4,North America,https://en.wikipedia.org/wiki/Guatemala
+82,GIN,Guinea,150,Africa,https://en.wikipedia.org/wiki/Guinea
+83,GNB,Guinea-Bissau,151,Africa,https://en.wikipedia.org/wiki/Guinea-Bissau
+84,GUY,Guyana,26,South America,https://en.wikipedia.org/wiki/Guyana
+85,HTI,Haiti,14,North America,https://en.wikipedia.org/wiki/Haiti
+86,HND,Honduras,7,North America,https://en.wikipedia.org/wiki/Honduras
+87,HKG,"Hong Kong SAR, China",A13,Other,https://en.wikipedia.org/wiki/Hong_Kong
+88,HUN,Hungary,54,Europe,https://en.wikipedia.org/wiki/Hungary
+89,ISL,Iceland,36,Europe,https://en.wikipedia.org/wiki/Iceland
+90,IND,India,104,Asia,https://en.wikipedia.org/wiki/India
+91,IDN,Indonesia,124,Asia,https://en.wikipedia.org/wiki/Indonesia
+92,IRN,"Iran, Islamic Rep.",86,Asia,https://en.wikipedia.org/wiki/Iran
+93,IRQ,Iraq,85,Asia,https://en.wikipedia.org/wiki/Iraq
+94,IRL,Ireland,37,Europe,https://en.wikipedia.org/wiki/Ireland
+95,IMN,Isle of Man,A14,Other,https://en.wikipedia.org/wiki/Isle_of_Man
+96,ISR,Israel,88,Asia,https://en.wikipedia.org/wiki/Israel
+97,ITA,Italy,67,Europe,https://en.wikipedia.org/wiki/Italy
+98,JAM,Jamaica,13,North America,https://en.wikipedia.org/wiki/Jamaica
+99,JPN,Japan,114,Asia,https://en.wikipedia.org/wiki/Japan
+100,JOR,Jordan,89,Asia,https://en.wikipedia.org/wiki/Jordan
+101,KAZ,Kazakhstan,97,Asia,https://en.wikipedia.org/wiki/Kazakhstan
+102,KEN,Kenya,170,Africa,https://en.wikipedia.org/wiki/Kenya
+103,KIR,Kiribati,131,Oceania,https://en.wikipedia.org/wiki/Kiribati
+104,PRK,"Korea, Dem. People's Rep.",112,Asia,https://en.wikipedia.org/wiki/North_Korea
+105,KOR,"Korea, Rep.",113,Asia,https://en.wikipedia.org/wiki/South_Korea
+106,XKX,Kosovo,A15,Other,https://en.wikipedia.org/wiki/Kosovo
+107,KWT,Kuwait,91,Asia,https://en.wikipedia.org/wiki/Kuwait
+108,KGZ,Kyrgyz Republic,100,Asia,https://en.wikipedia.org/wiki/Kyrgyzstan
+109,LAO,Lao PDR,117,Asia,https://en.wikipedia.org/wiki/Laos
+110,LVA,Latvia,44,Europe,https://en.wikipedia.org/wiki/Latvia
+111,LBN,Lebanon,87,Asia,https://en.wikipedia.org/wiki/Lebanon
+112,LSO,Lesotho,186,Africa,https://en.wikipedia.org/wiki/Lesotho
+113,LBR,Liberia,153,Africa,https://en.wikipedia.org/wiki/Liberia
+114,LBY,Libya,143,Africa,https://en.wikipedia.org/wiki/Libya
+115,LIE,Liechtenstein,65,Europe,https://en.wikipedia.org/wiki/Liechtenstein
+116,LTU,Lithuania,43,Europe,https://en.wikipedia.org/wiki/Lithuania
+117,LUX,Luxembourg,59,Europe,https://en.wikipedia.org/wiki/Luxembourg
+118,MAC,"Macao SAR, China",A16,Other,https://en.wikipedia.org/wiki/Macau
+119,MDG,Madagascar,188,Africa,https://en.wikipedia.org/wiki/Madagascar
+120,MWI,Malawi,178,Africa,https://en.wikipedia.org/wiki/Malawi
+121,MYS,Malaysia,121,Asia,https://en.wikipedia.org/wiki/Malaysia
+122,MDV,Maldives,109,Asia,https://en.wikipedia.org/wiki/Maldives
+123,MLI,Mali,146,Africa,https://en.wikipedia.org/wiki/Mali
+124,MLT,Malta,69,Europe,https://en.wikipedia.org/wiki/Malta
+125,MHL,Marshall Islands,132,Oceania,https://en.wikipedia.org/wiki/Marshall_Islands
+126,MRT,Mauritania,145,Africa,https://en.wikipedia.org/wiki/Mauritania
+127,MUS,Mauritius,193,Africa,https://en.wikipedia.org/wiki/Mauritius
+128,MEX,Mexico,3,North America,https://en.wikipedia.org/wiki/Mexico
+129,FSM,"Micronesia, Fed. Sts.",133,Oceania,https://en.wikipedia.org/wiki/Federated_States_of_Micronesia
+130,MDA,Moldova,48,Europe,https://en.wikipedia.org/wiki/Moldova
+131,MCO,Monaco,61,Europe,https://en.wikipedia.org/wiki/Monaco
+132,MNG,Mongolia,110,Asia,https://en.wikipedia.org/wiki/Mongolia
+133,MNE,Montenegro,74,Europe,https://en.wikipedia.org/wiki/Montenegro
+134,MAR,Morocco,140,Africa,https://en.wikipedia.org/wiki/Morocco
+135,MOZ,Mozambique,179,Africa,https://en.wikipedia.org/wiki/Mozambique
+136,MMR,Myanmar,115,Asia,https://en.wikipedia.org/wiki/Myanmar
+137,NAM,Namibia,181,Africa,https://en.wikipedia.org/wiki/Namibia
+138,NRU,Nauru,134,Oceania,https://en.wikipedia.org/wiki/Nauru
+139,NPL,Nepal,105,Asia,https://en.wikipedia.org/wiki/Nepal
+140,NLD,Netherlands,57,Europe,https://en.wikipedia.org/wiki/Netherlands
+141,NCL,New Caledonia,A17,Other,https://en.wikipedia.org/wiki/New_Caledonia
+142,NZL,New Zealand,129,Oceania,https://en.wikipedia.org/wiki/New_Zealand
+143,NIC,Nicaragua,8,North America,https://en.wikipedia.org/wiki/Nicaragua
+144,NER,Niger,158,Africa,https://en.wikipedia.org/wiki/Niger
+145,NGA,Nigeria,159,Africa,https://en.wikipedia.org/wiki/Nigeria
+146,MKD,North Macedonia,76,Europe,https://en.wikipedia.org/wiki/North_Macedonia
+147,MNP,Northern Mariana Islands,A18,Other,https://en.wikipedia.org/wiki/Northern_Mariana_Islands
+148,NOR,Norway,39,Europe,https://en.wikipedia.org/wiki/Norway
+149,OMN,Oman,96,Asia,https://en.wikipedia.org/wiki/Oman
+150,PAK,Pakistan,103,Asia,https://en.wikipedia.org/wiki/Pakistan
+151,PLW,Palau,135,Oceania,https://en.wikipedia.org/wiki/Palau
+152,PAN,Panama,10,North America,https://en.wikipedia.org/wiki/Panama
+153,PNG,Papua New Guinea,126,Oceania,https://en.wikipedia.org/wiki/Papua_New_Guinea
+154,PRY,Paraguay,32,South America,https://en.wikipedia.org/wiki/Paraguay
+155,PER,Peru,30,South America,https://en.wikipedia.org/wiki/Peru
+156,PHL,Philippines,120,Asia,https://en.wikipedia.org/wiki/Philippines
+157,POL,Poland,50,Europe,https://en.wikipedia.org/wiki/Poland
+158,PRT,Portugal,64,Europe,https://en.wikipedia.org/wiki/Portugal
+159,PRI,Puerto Rico,A19,Other,https://en.wikipedia.org/wiki/Puerto_Rico
+160,QAT,Qatar,93,Asia,https://en.wikipedia.org/wiki/Qatar
+161,ROU,Romania,49,Europe,https://en.wikipedia.org/wiki/Romania
+162,RUS,Russian Federation,42,Europe,https://en.wikipedia.org/wiki/Russia
+163,RWA,Rwanda,175,Africa,https://en.wikipedia.org/wiki/Rwanda
+164,WSM,Samoa,136,Oceania,https://en.wikipedia.org/wiki/Samoa
+165,SMR,San Marino,68,Europe,https://en.wikipedia.org/wiki/San_Marino
+166,STP,Sao Tome and Principe,190,Africa,https://en.wikipedia.org/wiki/Sao_Tome_and_Principe
+167,SAU,Saudi Arabia,90,Asia,https://en.wikipedia.org/wiki/Saudi_Arabia
+168,SEN,Senegal,148,Africa,https://en.wikipedia.org/wiki/Senegal
+169,SRB,Serbia,73,Europe,https://en.wikipedia.org/wiki/Serbia
+170,SYC,Seychelles,191,Africa,https://en.wikipedia.org/wiki/Seychelles
+171,SLE,Sierra Leone,152,Africa,https://en.wikipedia.org/wiki/Sierra Leone
+172,SGP,Singapore,122,Asia,https://en.wikipedia.org/wiki/Singapore
+173,SXM,Sint Maarten (Dutch part),A20,Other,https://en.wikipedia.org/wiki/Sint_Maarten
+174,SVK,Slovak Republic,52,Europe,https://en.wikipedia.org/wiki/Slovakia
+175,SVN,Slovenia,70,Europe,https://en.wikipedia.org/wiki/Slovenia
+176,SLB,Solomon Islands,127,Oceania,https://en.wikipedia.org/wiki/Solomon_Islands
+177,SOM,Somalia,174,Africa,https://en.wikipedia.org/wiki/Somalia
+178,ZAF,South Africa,185,Africa,https://en.wikipedia.org/wiki/South_Africa
+179,SSD,South Sudan,168,Africa,https://en.wikipedia.org/wiki/South_Sudan
+180,ESP,Spain,63,Europe,https://en.wikipedia.org/wiki/Spain
+181,LKA,Sri Lanka,108,Asia,https://en.wikipedia.org/wiki/Sri_Lanka
+182,KNA,St. Kitts and Nevis,20,North America,https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis
+183,LCA,St. Lucia,21,North America,https://en.wikipedia.org/wiki/Saint_Lucia
+184,MAF,St. Martin (French part),A21,Other,https://en.wikipedia.org/wiki/Collectivity_of_Saint_Martin
+185,VCT,St. Vincent and the Grenadines,22,North America,https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines
+186,SDN,Sudan,167,Africa,https://en.wikipedia.org/wiki/Sudan
+187,SUR,Suriname,27,South America,https://en.wikipedia.org/wiki/Suriname
+188,SWE,Sweden,40,Europe,https://en.wikipedia.org/wiki/Sweden
+189,CHE,Switzerland,66,Europe,https://en.wikipedia.org/wiki/Switzerland
+190,SYR,Syrian Arab Republic,84,Asia,https://en.wikipedia.org/wiki/Syria
+191,TJK,Tajikistan,101,Asia,https://en.wikipedia.org/wiki/Tajikistan
+192,TZA,Tanzania,177,Africa,https://en.wikipedia.org/wiki/Tanzania
+193,THA,Thailand,116,Asia,https://en.wikipedia.org/wiki/Thailand
+194,TLS,Timor-Leste,125,Asia,https://en.wikipedia.org/wiki/Timor-Leste
+195,TGO,Togo,156,Africa,https://en.wikipedia.org/wiki/Togo
+196,TON,Tonga,137,Oceania,https://en.wikipedia.org/wiki/Tonga
+197,TTO,Trinidad and Tobago,23,North America,https://en.wikipedia.org/wiki/Trinidad_and_Tobago
+198,TUN,Tunisia,142,Africa,https://en.wikipedia.org/wiki/Tunisia
+199,TUR,Turkey,80,Asia,https://en.wikipedia.org/wiki/Turkey
+200,TKM,Turkmenistan,99,Asia,https://en.wikipedia.org/wiki/Turkmenistan
+201,TCA,Turks and Caicos Islands,A22,Other,https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands
+202,TUV,Tuvalu,138,Oceania,https://en.wikipedia.org/wiki/Tuvalu
+203,UGA,Uganda,169,Africa,https://en.wikipedia.org/wiki/Uganda
+204,UKR,Ukraine,47,Europe,https://en.wikipedia.org/wiki/Ukraine
+205,ARE,United Arab Emirates,94,Asia,https://en.wikipedia.org/wiki/United_Arab_Emirates
+206,GBR,United Kingdom,38,Europe,https://en.wikipedia.org/wiki/United_Kingdom
+207,USA,United States,2,North America,https://en.wikipedia.org/wiki/United_States
+208,URY,Uruguay,33,South America,https://en.wikipedia.org/wiki/Uruguay
+209,UZB,Uzbekistan,98,Asia,https://en.wikipedia.org/wiki/Uzbekistan
+210,VUT,Vanuatu,139,Oceania,https://en.wikipedia.org/wiki/Vanuatu
+211,VEN,"Venezuela, RB",25,South America,https://en.wikipedia.org/wiki/Venezuela
+212,VNM,Vietnam,119,Asia,https://en.wikipedia.org/wiki/Vietnam
+213,VIR,Virgin Islands (U.S.),A23,Other,https://en.wikipedia.org/wiki/United_States_Virgin_Islands
+214,PSE,West Bank and Gaza,A24,Other,https://en.wikipedia.org/wiki/Palestinian_territories
+215,YEM,"Yemen, Rep.",95,Asia,https://en.wikipedia.org/wiki/Yemen
+216,ZMB,Zambia,182,Africa,https://en.wikipedia.org/wiki/Zambia
+217,ZWE,Zimbabwe,184,Africa,https://en.wikipedia.org/wiki/Zimbabwe
