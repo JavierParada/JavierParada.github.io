@@ -7,4 +7,6 @@ EL5M/.ipynb_checkpoints/EL5M_01_Notebook-checkpoint.ipynb
 
 EL5M/.ipynb_checkpoints/EL5M_Area-checkpoint.ipynb
 
+echo .DS_Store >> .gitignore
+
 .DS_Store
