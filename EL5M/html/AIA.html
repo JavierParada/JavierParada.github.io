@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a93ea6a805ff424eb172682817125af5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    
+                    <style>
+                        .foliumtooltip {
+                            background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>    
+    
+                 <h3 align="center" style="font-size:24px"><b>Anguilla (U.K.) (AIA):</b> 8 districts</h3>
+                 
+    
+            <div class="folium-map" id="map_a93ea6a805ff424eb172682817125af5" ></div>
+        
+</body>
+<script>    
+    
+            var map_a93ea6a805ff424eb172682817125af5 = L.map(
+                "map_a93ea6a805ff424eb172682817125af5",
+                {
+                    center: [18.214700602513844, -63.05156132772041],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+            function objects_in_front() {
+                    geo_json_fa92ccc676214e8b9b46424c8b72a0d7.bringToFront();
+            };
+            map_a93ea6a805ff424eb172682817125af5.on("overlayadd", objects_in_front);
+            $(document).ready(objects_in_front);
+
+        
+    
+            var tile_layer_2b169b28025e4eac927ad5850d2d52f0 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a93ea6a805ff424eb172682817125af5);
+        
+    
+            var tile_layer_965cc45730564b4e8e904b2014260377 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a93ea6a805ff424eb172682817125af5);
+        
+    
+            var tile_layer_b3f4d6777170487582e9561c716b2e9f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a93ea6a805ff424eb172682817125af5);
+        
+    
+            var tile_layer_2e5f6be6e0664ac3a3c1799bc2579dbe = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a93ea6a805ff424eb172682817125af5);
+        
+    
+            var choropleth_6b25465a017643f699b68bf84cbf26c5 = L.featureGroup(
+                {}
+            ).addTo(map_a93ea6a805ff424eb172682817125af5);
+        
+    
+        function geo_json_6f7730f909f44d1cbb4e480274e22f34_styler(feature) {
+            switch(feature.id) {
+                case "13176": case "13182": 
+                    return {"color": "black", "fillColor": "#f03b20", "fillOpacity": 0.9, "opacity": 0.2, "weight": 1};
+                case "13179": 
+                    return {"color": "black", "fillColor": "#bd0026", "fillOpacity": 0.9, "opacity": 0.2, "weight": 1};
+                case "13183": 
+                    return {"color": "black", "fillColor": "#fed976", "fillOpacity": 0.9, "opacity": 0.2, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#ffffb2", "fillOpacity": 0.9, "opacity": 0.2, "weight": 1};
+            }
+        }
+
+        function geo_json_6f7730f909f44d1cbb4e480274e22f34_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6f7730f909f44d1cbb4e480274e22f34 = L.geoJson(null, {
+                onEachFeature: geo_json_6f7730f909f44d1cbb4e480274e22f34_onEachFeature,
+            
+                style: geo_json_6f7730f909f44d1cbb4e480274e22f34_styler,
+        });
+
+        function geo_json_6f7730f909f44d1cbb4e480274e22f34_add (data) {
+            geo_json_6f7730f909f44d1cbb4e480274e22f34
+                .addData(data)
+                .addTo(choropleth_6b25465a017643f699b68bf84cbf26c5);
+        }
+            geo_json_6f7730f909f44d1cbb4e480274e22f34_add({"bbox": [-63.15409439999996, 18.161150500000076, -62.93035199999997, 18.295897300000036], "features": [{"bbox": [-63.15409439999996, 18.161150500000076, -63.098816399999976, 18.19203850100007], "geometry": {"coordinates": [[[-63.11323952099997, 18.19203850100007], [-63.098816399999976, 18.16948283800002], [-63.11707629999995, 18.176283599000044], [-63.14936629999994, 18.161150500000076], [-63.15409439999996, 18.173413700000026], [-63.13305349999996, 18.190385099000025], [-63.11323952099997, 18.19203850100007]]], "type": "Polygon"}, "id": "13176", "properties": {"0": 7.0, "1": 2.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 22.222, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "421", "GAUL_0": 9, "GAUL_1": 421, "GAUL_2": 4370, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14370, "SOVEREIGN": "GBR", "Shape_Area": 0.00090964747314, "Shape_Le_1": 0.242939062421, "Shape_Le_2": 0.242939062421, "Shape_Leng": 0.242939062421, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 9.0, "mean": 16.006999999999998, "ratio": 33.46506777545046, "row_number": 13265, "sum_x": 11.048931948343911, "sum_y": 33.016314272787056}, "type": "Feature"}, {"bbox": [-63.08171887399993, 18.183559041000024, -63.04454755399996, 18.212145930000077], "geometry": {"coordinates": [[[-63.072122106999984, 18.183559041000024], [-63.08171887399993, 18.187736750000056], [-63.07007133899998, 18.204887040000074], [-63.058536232999984, 18.212145930000077], [-63.04454755399996, 18.19761793200007], [-63.072122106999984, 18.183559041000024]]], "type": "Polygon"}, "id": "13177", "properties": {"0": 6.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "420", "GAUL_0": 9, "GAUL_1": 420, "GAUL_2": 4369, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14371, "SOVEREIGN": "GBR", "Shape_Area": 0.00058733328542, "Shape_Le_1": 0.121002908441, "Shape_Le_2": 0.121002908441, "Shape_Leng": 0.121002908441, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 6.0, "mean": 0.182, "ratio": 0.0, "row_number": 13266, "sum_x": 0.0, "sum_y": 13.77818279640347}, "type": "Feature"}, {"bbox": [-63.09879454199995, 18.169486822000067, -63.072122106999984, 18.187736750000056], "geometry": {"coordinates": [[[-63.09879454199995, 18.169486822000067], [-63.095118885999966, 18.183954613000026], [-63.08171887399993, 18.187736750000056], [-63.072122106999984, 18.183559041000024], [-63.09879454199995, 18.169486822000067]]], "type": "Polygon"}, "id": "13178", "properties": {"0": 2.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "422", "GAUL_0": 9, "GAUL_1": 422, "GAUL_2": 4371, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14372, "SOVEREIGN": "GBR", "Shape_Area": 0.00028401414368, "Shape_Le_1": 0.0784710811179, "Shape_Le_2": 0.0784710811179, "Shape_Leng": 0.0784710811179, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 2.0, "mean": 1.199, "ratio": 0.0, "row_number": 13267, "sum_x": 0.0, "sum_y": 6.67013375899371}, "type": "Feature"}, {"bbox": [-62.958293399999945, 18.274789600000076, -62.93035199999997, 18.295897300000036], "geometry": {"coordinates": [[[-62.94460339999995, 18.295897300000036], [-62.93035199999997, 18.290693800000042], [-62.95601889999995, 18.274789600000076], [-62.958293399999945, 18.287625700000035], [-62.94460339999995, 18.295897300000036]]], "type": "Polygon"}, "id": "13179", "properties": {"0": 2.0, "1": 1.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 33.333, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "424", "GAUL_0": 9, "GAUL_1": 424, "GAUL_2": 4373, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14373, "SOVEREIGN": "GBR", "Shape_Area": 0.00030031641854, "Shape_Le_1": 0.143656269261, "Shape_Le_2": 0.143656269261, "Shape_Leng": 0.143656269261, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 3.0, "mean": 58.550000000000004, "ratio": null, "row_number": 13268, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-63.11323952099997, 18.16948283800002, -63.07007133899998, 18.21201430700006], "geometry": {"coordinates": [[[-63.098816399999976, 18.16948283800002], [-63.11323952099997, 18.19203850100007], [-63.09096489999996, 18.198907700000063], [-63.076671586999964, 18.21201430700006], [-63.07007133899998, 18.204887040000074], [-63.08171887399993, 18.187736750000056], [-63.095118885999966, 18.183954613000026], [-63.09879454199995, 18.169486822000067], [-63.098816399999976, 18.16948283800002]]], "type": "Polygon"}, "id": "13180", "properties": {"0": 7.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "419", "GAUL_0": 9, "GAUL_1": 419, "GAUL_2": 4368, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14375, "SOVEREIGN": "GBR", "Shape_Area": 0.00063578722636, "Shape_Le_1": 0.153221241048, "Shape_Le_2": 0.153221241048, "Shape_Leng": 0.153221241048, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 7.0, "mean": 2.915, "ratio": 0.0, "row_number": 13270, "sum_x": 0.0, "sum_y": 31.28103246314853}, "type": "Feature"}, {"bbox": [-63.076671586999964, 18.204887040000074, -63.02747669399997, 18.25759047400004], "geometry": {"coordinates": [[[-63.02747669399997, 18.25759047400004], [-63.02807546699995, 18.231306990000064], [-63.058536232999984, 18.212145930000077], [-63.07007133899998, 18.204887040000074], [-63.076671586999964, 18.21201430700006], [-63.066873129999976, 18.220830723000063], [-63.06770299999994, 18.237248100000045], [-63.02747669399997, 18.25759047400004]]], "type": "Polygon"}, "id": "13181", "properties": {"0": 14.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "417", "GAUL_0": 9, "GAUL_1": 417, "GAUL_2": 4366, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14377, "SOVEREIGN": "GBR", "Shape_Area": 0.00126448878423, "Shape_Le_1": 0.178665202657, "Shape_Le_2": 0.178665202657, "Shape_Leng": 0.178665202657, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 14.0, "mean": 0.109, "ratio": 0.0, "row_number": 13272, "sum_x": 0.0, "sum_y": 34.319934270896155}, "type": "Feature"}, {"bbox": [-63.058536232999984, 18.19761793200007, -63.01375169199997, 18.231306990000064], "geometry": {"coordinates": [[[-63.02807546699995, 18.231306990000064], [-63.01375169199997, 18.209894443000053], [-63.04454755399996, 18.19761793200007], [-63.058536232999984, 18.212145930000077], [-63.02807546699995, 18.231306990000064]]], "type": "Polygon"}, "id": "13182", "properties": {"0": 7.0, "1": 2.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 22.222, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "418", "GAUL_0": 9, "GAUL_1": 418, "GAUL_2": 4367, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14378, "SOVEREIGN": "GBR", "Shape_Area": 0.00076225824705, "Shape_Le_1": 0.12615526349, "Shape_Le_2": 0.12615526349, "Shape_Leng": 0.12615526349, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 9.0, "mean": 10.304, "ratio": 0.0, "row_number": 13273, "sum_x": 0.0, "sum_y": 17.547709745519303}, "type": "Feature"}, {"bbox": [-63.02807546699995, 18.209894443000053, -62.987258699999984, 18.260964100000024], "geometry": {"coordinates": [[[-63.01375169199997, 18.209894443000053], [-63.02807546699995, 18.231306990000064], [-63.02747669399997, 18.25759047400004], [-63.00786849999997, 18.260964100000024], [-62.987258699999984, 18.248362900000075], [-62.98916419999995, 18.225464100000067], [-63.01375169199997, 18.209894443000053]]], "type": "Polygon"}, "id": "13183", "properties": {"0": 16.0, "1": 1.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 5.882, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "416", "GAUL_0": 9, "GAUL_1": 416, "GAUL_2": 4365, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14379, "SOVEREIGN": "GBR", "Shape_Area": 0.00172553416915, "Shape_Le_1": 0.278352984093, "Shape_Le_2": 0.278352984093, "Shape_Leng": 0.278352984093, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 17.0, "mean": 2.699, "ratio": 0.0, "row_number": 13274, "sum_x": 0.0, "sum_y": 9.942881629046273}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    var color_map_5c0fc5281a4d47eba8f94c89ff736259 = {};
+
+    
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.color = d3.scale.threshold()
+              .domain([0.0, 0.06679959919839679, 0.13359919839679357, 0.20039879759519036, 0.26719839679358715, 0.33399799599198393, 0.4007975951903807, 0.46759719438877756, 0.5343967935871743, 0.601196392785571, 0.6679959919839679, 0.7347955911823647, 0.8015951903807614, 0.8683947895791582, 0.9351943887775551, 1.0019939879759518, 1.0687935871743486, 1.1355931863727453, 1.202392785571142, 1.269192384769539, 1.3359919839679357, 1.4027915831663325, 1.4695911823647294, 1.5363907815631261, 1.6031903807615229, 1.6699899799599196, 1.7367895791583163, 1.8035891783567135, 1.8703887775551102, 1.937188376753507, 2.0039879759519037, 2.0707875751503004, 2.137587174348697, 2.2043867735470943, 2.2711863727454906, 2.337985971943888, 2.404785571142284, 2.4715851703406813, 2.538384769539078, 2.6051843687374747, 2.6719839679358715, 2.7387835671342686, 2.805583166332665, 2.872382765531062, 2.939182364729459, 3.0059819639278555, 3.0727815631262523, 3.139581162324649, 3.2063807615230457, 3.273180360721443, 3.339979959919839, 3.4067795591182364, 3.4735791583166327, 3.54037875751503, 3.607178356713427, 3.6739779559118233, 3.7407775551102205, 3.807577154308617, 3.874376753507014, 3.9411763527054107, 4.007975951903807, 4.074775551102205, 4.141575150300601, 4.208374749498998, 4.275174348697394, 4.3419739478957915, 4.408773547094189, 4.475573146292585, 4.542372745490981, 4.609172344689378, 4.675971943887776, 4.742771543086173, 4.809571142284568, 4.876370741482965, 4.9431703406813625, 5.00996993987976, 5.076769539078156, 5.143569138276553, 5.210368737474949, 5.277168336673347, 5.343967935871743, 5.41076753507014, 5.477567134268537, 5.5443667334669335, 5.61116633266533, 5.677965931863727, 5.744765531062124, 5.811565130260521, 5.878364729458918, 5.945164328657314, 6.011963927855711, 6.078763527054108, 6.145563126252505, 6.212362725450902, 6.279162324649298, 6.345961923847695, 6.4127615230460915, 6.479561122244489, 6.546360721442886, 6.613160320641282, 6.679959919839678, 6.746759519038076, 6.813559118236473, 6.88035871743487, 6.947158316633265, 7.0139579158316625, 7.08075751503006, 7.147557114228457, 7.214356713426854, 7.28115631262525, 7.347955911823647, 7.414755511022044, 7.481555110220441, 7.548354709418837, 7.615154308617234, 7.681953907815631, 7.748753507014028, 7.815553106212424, 7.882352705410821, 7.9491523046092185, 8.015951903807615, 8.082751503006012, 8.14955110220441, 8.216350701402805, 8.283150300601202, 8.349949899799599, 8.416749498997996, 8.483549098196393, 8.550348697394789, 8.617148296593186, 8.683947895791583, 8.750747494989978, 8.817547094188377, 8.884346693386773, 8.95114629258517, 9.017945891783567, 9.084745490981962, 9.151545090180361, 9.218344689378757, 9.285144288577152, 9.351943887775551, 9.418743486973947, 9.485543086172346, 9.552342685370741, 9.619142284569136, 9.685941883767535, 9.75274148296593, 9.819541082164328, 9.886340681362725, 9.953140280561122, 10.01993987975952, 10.086739478957915, 10.153539078156312, 10.22033867735471, 10.287138276553106, 10.353937875751502, 10.420737474949899, 10.487537074148296, 10.554336673346693, 10.62113627254509, 10.687935871743486, 10.754735470941883, 10.82153507014028, 10.888334669338676, 10.955134268537075, 11.02193386773547, 11.088733466933867, 11.155533066132264, 11.22233266533066, 11.289132264529059, 11.355931863727454, 11.422731462925851, 11.489531062124248, 11.556330661322644, 11.623130260521043, 11.689929859719438, 11.756729458917835, 11.823529058116232, 11.890328657314628, 11.957128256513027, 12.023927855711422, 12.09072745490982, 12.157527054108217, 12.224326653306612, 12.29112625250501, 12.357925851703406, 12.424725450901803, 12.4915250501002, 12.558324649298596, 12.625124248496993, 12.69192384769539, 12.758723446893788, 12.825523046092183, 12.89232264529058, 12.959122244488977, 13.025921843687374, 13.092721442885772, 13.159521042084167, 13.226320641282564, 13.293120240480961, 13.359919839679357, 13.426719438877756, 13.493519038076151, 13.560318637274548, 13.627118236472946, 13.693917835671341, 13.76071743486974, 13.827517034068135, 13.89431663326653, 13.96111623246493, 14.027915831663325, 14.094715430861724, 14.16151503006012, 14.228314629258517, 14.295114228456914, 14.361913827655309, 14.428713426853708, 14.495513026052103, 14.5623126252505, 14.629112224448898, 14.695911823647293, 14.76271142284569, 14.829511022044088, 14.896310621242485, 14.963110220440882, 15.029909819639277, 15.096709418837674, 15.163509018036072, 15.230308617234469, 15.297108216432864, 15.363907815631261, 15.430707414829659, 15.497507014028056, 15.564306613226453, 15.631106212424848, 15.697905811623245, 15.764705410821643, 15.831505010020038, 15.898304609218437, 15.965104208416832, 16.03190380761523, 16.098703406813627, 16.165503006012024, 16.23230260521042, 16.29910220440882, 16.365901803607215, 16.43270140280561, 16.49950100200401, 16.566300601202403, 16.6331002004008, 16.699899799599198, 16.76669939879759, 16.833498997995992, 16.90029859719439, 16.967098196392786, 17.03389779559118, 17.100697394789577, 17.167496993987974, 17.23429659318637, 17.30109619238477, 17.367895791583166, 17.434695390781563, 17.501494989979957, 17.568294589178358, 17.635094188376755, 17.70189378757515, 17.768693386773545, 17.835492985971943, 17.90229258517034, 17.969092184368737, 18.035891783567134, 18.10269138276553, 18.169490981963925, 18.236290581162326, 18.303090180360723, 18.369889779559117, 18.436689378757514, 18.50348897795591, 18.570288577154304, 18.637088176352705, 18.703887775551102, 18.7706873747495, 18.837486973947893, 18.90428657314629, 18.97108617234469, 19.037885771543085, 19.104685370741482, 19.17148496993988, 19.238284569138273, 19.305084168336673, 19.37188376753507, 19.438683366733468, 19.50548296593186, 19.57228256513026, 19.639082164328656, 19.705881763527053, 19.77268136272545, 19.839480961923847, 19.906280561122244, 19.973080160320638, 20.03987975951904, 20.106679358717436, 20.17347895791583, 20.240278557114227, 20.307078156312624, 20.37387775551102, 20.44067735470942, 20.507476953907815, 20.574276553106213, 20.641076152304606, 20.707875751503003, 20.774675350701404, 20.841474949899798, 20.908274549098195, 20.975074148296592, 21.041873747494986, 21.108673346693386, 21.175472945891784, 21.24227254509018, 21.309072144288574, 21.37587174348697, 21.442671342685372, 21.509470941883766, 21.576270541082163, 21.64307014028056, 21.709869739478957, 21.77666933867735, 21.843468937875752, 21.91026853707415, 21.977068136272543, 22.04386773547094, 22.110667334669337, 22.177466933867734, 22.24426653306613, 22.31106613226453, 22.377865731462926, 22.44466533066132, 22.51146492985972, 22.578264529058117, 22.64506412825651, 22.711863727454908, 22.778663326653305, 22.845462925851702, 22.9122625250501, 22.979062124248497, 23.045861723446894, 23.112661322645287, 23.179460921843685, 23.246260521042085, 23.31306012024048, 23.379859719438876, 23.446659318637273, 23.51345891783567, 23.580258517034068, 23.647058116232465, 23.713857715430862, 23.780657314629256, 23.847456913827653, 23.914256513026054, 23.981056112224447, 24.047855711422844, 24.11465531062124, 24.18145490981964, 24.248254509018032, 24.315054108216433, 24.38185370741483, 24.448653306613224, 24.51545290581162, 24.58225250501002, 24.649052104208415, 24.715851703406813, 24.78265130260521, 24.849450901803607, 24.916250501002, 24.9830501002004, 25.0498496993988, 25.116649298597192, 25.18344889779559, 25.250248496993986, 25.31704809619238, 25.38384769539078, 25.450647294589178, 25.517446893787575, 25.58424649298597, 25.651046092184366, 25.717845691382767, 25.78464529058116, 25.851444889779557, 25.918244488977955, 25.985044088176352, 26.05184368737475, 26.118643286573146, 26.185442885771543, 26.252242484969937, 26.319042084168334, 26.385841683366735, 26.45264128256513, 26.519440881763526, 26.586240480961923, 26.65304008016032, 26.719839679358714, 26.786639278557114, 26.85343887775551, 26.920238476953905, 26.987038076152302, 27.0538376753507, 27.120637274549097, 27.187436873747494, 27.25423647294589, 27.321036072144288, 27.387835671342682, 27.454635270541083, 27.52143486973948, 27.588234468937873, 27.65503406813627, 27.721833667334668, 27.78863326653306, 27.855432865731462, 27.92223246492986, 27.989032064128256, 28.05583166332665, 28.122631262525047, 28.189430861723448, 28.25623046092184, 28.32303006012024, 28.389829659318636, 28.456629258517033, 28.52342885771543, 28.590228456913827, 28.657028056112225, 28.723827655310618, 28.790627254509015, 28.857426853707416, 28.92422645290581, 28.991026052104207, 29.057825651302604, 29.124625250501, 29.191424849699395, 29.258224448897796, 29.325024048096193, 29.391823647294586, 29.458623246492984, 29.52542284569138, 29.592222444889778, 29.659022044088175, 29.725821643286572, 29.79262124248497, 29.859420841683363, 29.926220440881764, 29.99302004008016, 30.059819639278555, 30.126619238476952, 30.19341883767535, 30.260218436873746, 30.327018036072143, 30.39381763527054, 30.460617234468938, 30.52741683366733, 30.59421643286573, 30.66101603206413, 30.727815631262523, 30.79461523046092, 30.861414829659317, 30.928214428857714, 30.99501402805611, 31.06181362725451, 31.128613226452906, 31.1954128256513, 31.262212424849697, 31.329012024048094, 31.39581162324649, 31.462611222444888, 31.529410821643285, 31.596210420841683, 31.663010020040076, 31.729809619238477, 31.796609218436874, 31.863408817635268, 31.930208416833665, 31.997008016032062, 32.06380761523046, 32.130607214428856, 32.19740681362725, 32.26420641282565, 32.33100601202405, 32.397805611222445, 32.46460521042084, 32.53140480961923, 32.59820440881764, 32.665004008016034, 32.73180360721443, 32.79860320641282, 32.86540280561122, 32.932202404809615, 32.99900200400802, 33.06580160320641, 33.13260120240481, 33.199400801603204, 33.2662004008016, 33.333])
+              .range(['#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026']);
+    
+
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.x = d3.scale.linear()
+              .domain([0.0, 33.333])
+              .range([0, 400]);
+
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.legend = L.control({position: 'topright'});
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.legend.addTo(map_a93ea6a805ff424eb172682817125af5);
+
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.xAxis = d3.svg.axis()
+        .scale(color_map_5c0fc5281a4d47eba8f94c89ff736259.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 5.555499999999999, 11.110999999999999, 16.6665, 22.221999999999998, 27.777499999999996, 33.333]);
+
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.g = color_map_5c0fc5281a4d47eba8f94c89ff736259.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.g.selectAll("rect")
+        .data(color_map_5c0fc5281a4d47eba8f94c89ff736259.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_5c0fc5281a4d47eba8f94c89ff736259.x(color_map_5c0fc5281a4d47eba8f94c89ff736259.color.domain()[i - 1]) : color_map_5c0fc5281a4d47eba8f94c89ff736259.x.range()[0],
+            x1: i < color_map_5c0fc5281a4d47eba8f94c89ff736259.color.domain().length ? color_map_5c0fc5281a4d47eba8f94c89ff736259.x(color_map_5c0fc5281a4d47eba8f94c89ff736259.color.domain()[i]) : color_map_5c0fc5281a4d47eba8f94c89ff736259.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 10)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_5c0fc5281a4d47eba8f94c89ff736259.g.call(color_map_5c0fc5281a4d47eba8f94c89ff736259.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text('Land area where elevation is below 5 meters (% of total land area)');
+    
+        function geo_json_fa92ccc676214e8b9b46424c8b72a0d7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#000000", "fillColor": "#ffffff", "fillOpacity": 0.1, "weight": 0.1};
+            }
+        }
+        function geo_json_fa92ccc676214e8b9b46424c8b72a0d7_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#000000", "fillColor": "#000000", "fillOpacity": 0.5, "weight": 0.1};
+            }
+        }
+
+        function geo_json_fa92ccc676214e8b9b46424c8b72a0d7_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_fa92ccc676214e8b9b46424c8b72a0d7.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_fa92ccc676214e8b9b46424c8b72a0d7_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_fa92ccc676214e8b9b46424c8b72a0d7 = L.geoJson(null, {
+                onEachFeature: geo_json_fa92ccc676214e8b9b46424c8b72a0d7_onEachFeature,
+            
+                style: geo_json_fa92ccc676214e8b9b46424c8b72a0d7_styler,
+        });
+
+        function geo_json_fa92ccc676214e8b9b46424c8b72a0d7_add (data) {
+            geo_json_fa92ccc676214e8b9b46424c8b72a0d7
+                .addData(data)
+                .addTo(map_a93ea6a805ff424eb172682817125af5);
+        }
+            geo_json_fa92ccc676214e8b9b46424c8b72a0d7_add({"bbox": [-63.15409439999996, 18.161150500000076, -62.93035199999997, 18.295897300000036], "features": [{"bbox": [-63.15409439999996, 18.161150500000076, -63.098816399999976, 18.19203850100007], "geometry": {"coordinates": [[[-63.11323952099997, 18.19203850100007], [-63.098816399999976, 18.16948283800002], [-63.11707629999995, 18.176283599000044], [-63.14936629999994, 18.161150500000076], [-63.15409439999996, 18.173413700000026], [-63.13305349999996, 18.190385099000025], [-63.11323952099997, 18.19203850100007]]], "type": "Polygon"}, "id": "13176", "properties": {"0": 7.0, "1": 2.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 22.222, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "421", "GAUL_0": 9, "GAUL_1": 421, "GAUL_2": 4370, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14370, "SOVEREIGN": "GBR", "Shape_Area": 0.00090964747314, "Shape_Le_1": 0.242939062421, "Shape_Le_2": 0.242939062421, "Shape_Leng": 0.242939062421, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 9.0, "mean": 16.006999999999998, "ratio": 33.46506777545046, "row_number": 13265, "sum_x": 11.048931948343911, "sum_y": 33.016314272787056}, "type": "Feature"}, {"bbox": [-63.08171887399993, 18.183559041000024, -63.04454755399996, 18.212145930000077], "geometry": {"coordinates": [[[-63.072122106999984, 18.183559041000024], [-63.08171887399993, 18.187736750000056], [-63.07007133899998, 18.204887040000074], [-63.058536232999984, 18.212145930000077], [-63.04454755399996, 18.19761793200007], [-63.072122106999984, 18.183559041000024]]], "type": "Polygon"}, "id": "13177", "properties": {"0": 6.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "420", "GAUL_0": 9, "GAUL_1": 420, "GAUL_2": 4369, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14371, "SOVEREIGN": "GBR", "Shape_Area": 0.00058733328542, "Shape_Le_1": 0.121002908441, "Shape_Le_2": 0.121002908441, "Shape_Leng": 0.121002908441, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 6.0, "mean": 0.182, "ratio": 0.0, "row_number": 13266, "sum_x": 0.0, "sum_y": 13.77818279640347}, "type": "Feature"}, {"bbox": [-63.09879454199995, 18.169486822000067, -63.072122106999984, 18.187736750000056], "geometry": {"coordinates": [[[-63.09879454199995, 18.169486822000067], [-63.095118885999966, 18.183954613000026], [-63.08171887399993, 18.187736750000056], [-63.072122106999984, 18.183559041000024], [-63.09879454199995, 18.169486822000067]]], "type": "Polygon"}, "id": "13178", "properties": {"0": 2.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "422", "GAUL_0": 9, "GAUL_1": 422, "GAUL_2": 4371, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14372, "SOVEREIGN": "GBR", "Shape_Area": 0.00028401414368, "Shape_Le_1": 0.0784710811179, "Shape_Le_2": 0.0784710811179, "Shape_Leng": 0.0784710811179, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 2.0, "mean": 1.199, "ratio": 0.0, "row_number": 13267, "sum_x": 0.0, "sum_y": 6.67013375899371}, "type": "Feature"}, {"bbox": [-62.958293399999945, 18.274789600000076, -62.93035199999997, 18.295897300000036], "geometry": {"coordinates": [[[-62.94460339999995, 18.295897300000036], [-62.93035199999997, 18.290693800000042], [-62.95601889999995, 18.274789600000076], [-62.958293399999945, 18.287625700000035], [-62.94460339999995, 18.295897300000036]]], "type": "Polygon"}, "id": "13179", "properties": {"0": 2.0, "1": 1.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 33.333, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "424", "GAUL_0": 9, "GAUL_1": 424, "GAUL_2": 4373, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14373, "SOVEREIGN": "GBR", "Shape_Area": 0.00030031641854, "Shape_Le_1": 0.143656269261, "Shape_Le_2": 0.143656269261, "Shape_Leng": 0.143656269261, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 3.0, "mean": 58.550000000000004, "ratio": null, "row_number": 13268, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-63.11323952099997, 18.16948283800002, -63.07007133899998, 18.21201430700006], "geometry": {"coordinates": [[[-63.098816399999976, 18.16948283800002], [-63.11323952099997, 18.19203850100007], [-63.09096489999996, 18.198907700000063], [-63.076671586999964, 18.21201430700006], [-63.07007133899998, 18.204887040000074], [-63.08171887399993, 18.187736750000056], [-63.095118885999966, 18.183954613000026], [-63.09879454199995, 18.169486822000067], [-63.098816399999976, 18.16948283800002]]], "type": "Polygon"}, "id": "13180", "properties": {"0": 7.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "419", "GAUL_0": 9, "GAUL_1": 419, "GAUL_2": 4368, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14375, "SOVEREIGN": "GBR", "Shape_Area": 0.00063578722636, "Shape_Le_1": 0.153221241048, "Shape_Le_2": 0.153221241048, "Shape_Leng": 0.153221241048, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 7.0, "mean": 2.915, "ratio": 0.0, "row_number": 13270, "sum_x": 0.0, "sum_y": 31.28103246314853}, "type": "Feature"}, {"bbox": [-63.076671586999964, 18.204887040000074, -63.02747669399997, 18.25759047400004], "geometry": {"coordinates": [[[-63.02747669399997, 18.25759047400004], [-63.02807546699995, 18.231306990000064], [-63.058536232999984, 18.212145930000077], [-63.07007133899998, 18.204887040000074], [-63.076671586999964, 18.21201430700006], [-63.066873129999976, 18.220830723000063], [-63.06770299999994, 18.237248100000045], [-63.02747669399997, 18.25759047400004]]], "type": "Polygon"}, "id": "13181", "properties": {"0": 14.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "417", "GAUL_0": 9, "GAUL_1": 417, "GAUL_2": 4366, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14377, "SOVEREIGN": "GBR", "Shape_Area": 0.00126448878423, "Shape_Le_1": 0.178665202657, "Shape_Le_2": 0.178665202657, "Shape_Leng": 0.178665202657, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 14.0, "mean": 0.109, "ratio": 0.0, "row_number": 13272, "sum_x": 0.0, "sum_y": 34.319934270896155}, "type": "Feature"}, {"bbox": [-63.058536232999984, 18.19761793200007, -63.01375169199997, 18.231306990000064], "geometry": {"coordinates": [[[-63.02807546699995, 18.231306990000064], [-63.01375169199997, 18.209894443000053], [-63.04454755399996, 18.19761793200007], [-63.058536232999984, 18.212145930000077], [-63.02807546699995, 18.231306990000064]]], "type": "Polygon"}, "id": "13182", "properties": {"0": 7.0, "1": 2.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 22.222, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "418", "GAUL_0": 9, "GAUL_1": 418, "GAUL_2": 4367, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14378, "SOVEREIGN": "GBR", "Shape_Area": 0.00076225824705, "Shape_Le_1": 0.12615526349, "Shape_Le_2": 0.12615526349, "Shape_Leng": 0.12615526349, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 9.0, "mean": 10.304, "ratio": 0.0, "row_number": 13273, "sum_x": 0.0, "sum_y": 17.547709745519303}, "type": "Feature"}, {"bbox": [-63.02807546699995, 18.209894443000053, -62.987258699999984, 18.260964100000024], "geometry": {"coordinates": [[[-63.01375169199997, 18.209894443000053], [-63.02807546699995, 18.231306990000064], [-63.02747669399997, 18.25759047400004], [-63.00786849999997, 18.260964100000024], [-62.987258699999984, 18.248362900000075], [-62.98916419999995, 18.225464100000067], [-63.01375169199997, 18.209894443000053]]], "type": "Polygon"}, "id": "13183", "properties": {"0": 16.0, "1": 1.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 5.882, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "AI000009", "GAD_ID_1": "416", "GAUL_0": 9, "GAUL_1": 416, "GAUL_2": 4365, "HASC_0": "AI", "HASC_1": null, "HASC_2": null, "ISO_A2": "AI", "ISO_A3": "AIA", "LAST_UPDTE": "20171231", "NAM_0": "Anguilla (U.K.)", "NAM_0_Alt": null, "NAM_1": "Name Unknown", "NAM_1_GAUL": "Name Unknown", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14379, "SOVEREIGN": "GBR", "Shape_Area": 0.00172553416915, "Shape_Le_1": 0.278352984093, "Shape_Le_2": 0.278352984093, "Shape_Leng": 0.278352984093, "WB_A3": "AIA", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 17.0, "mean": 2.699, "ratio": 0.0, "row_number": 13274, "sum_x": 0.0, "sum_y": 9.942881629046273}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_fa92ccc676214e8b9b46424c8b72a0d7.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["row_number", "NAM_2", "NAM_1", "NAM_0", "AG_LND_EL5M_ZS", "mean", "0", "1", "area"];
+    let aliases = ["District number: ", "District name: ", "State: ", "Country: ", "Land area where elevation is below 5 meters (% of total land area): ", "mean", "0: more than 5 m ", "1: less than 5 m", "Total area (km2)"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "parseHtml": true, "sticky": true});
+                     
+    
+            var layer_control_aa0915b7c9ca45aa88a901f3fe316662 = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_2b169b28025e4eac927ad5850d2d52f0,
+                    "cartodbpositron" : tile_layer_965cc45730564b4e8e904b2014260377,
+                    "openstreetmap" : tile_layer_b3f4d6777170487582e9561c716b2e9f,
+                    "stamenwatercolor" : tile_layer_2e5f6be6e0664ac3a3c1799bc2579dbe,
+                },
+                overlays :  {
+                    "choropleth" : choropleth_6b25465a017643f699b68bf84cbf26c5,
+                },
+            };
+            L.control.layers(
+                layer_control_aa0915b7c9ca45aa88a901f3fe316662.base_layers,
+                layer_control_aa0915b7c9ca45aa88a901f3fe316662.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a93ea6a805ff424eb172682817125af5);
+            tile_layer_965cc45730564b4e8e904b2014260377.remove();
+            tile_layer_b3f4d6777170487582e9561c716b2e9f.remove();
+            tile_layer_2e5f6be6e0664ac3a3c1799bc2579dbe.remove();
+        
+</script>
