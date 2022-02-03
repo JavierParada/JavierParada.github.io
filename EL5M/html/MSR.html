@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1b5da4eed477444cb2ad2e33e7f608dc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    
+                    <style>
+                        .foliumtooltip {
+                            background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>    
+    
+                 <h3 align="center" style="font-size:24px"><b>Montserrat (U.K.) (MSR):</b> 7 districts</h3>
+                 
+    
+            <div class="folium-map" id="map_1b5da4eed477444cb2ad2e33e7f608dc" ></div>
+        
+</body>
+<script>    
+    
+            var map_1b5da4eed477444cb2ad2e33e7f608dc = L.map(
+                "map_1b5da4eed477444cb2ad2e33e7f608dc",
+                {
+                    center: [16.73040984121704, -62.19409002095174],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+            function objects_in_front() {
+                    geo_json_ceba721db9b94adfae929e19bba3a176.bringToFront();
+            };
+            map_1b5da4eed477444cb2ad2e33e7f608dc.on("overlayadd", objects_in_front);
+            $(document).ready(objects_in_front);
+
+        
+    
+            var tile_layer_148a37893d0f47ec9aa817bb0baebcc3 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1b5da4eed477444cb2ad2e33e7f608dc);
+        
+    
+            var tile_layer_da05d439deaa427a902f0c9a0c797f2a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1b5da4eed477444cb2ad2e33e7f608dc);
+        
+    
+            var tile_layer_c5b8aaf576064a90837c652884e19860 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1b5da4eed477444cb2ad2e33e7f608dc);
+        
+    
+            var tile_layer_8f0e9457fe5c4fad8289d8718441b669 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1b5da4eed477444cb2ad2e33e7f608dc);
+        
+    
+            var choropleth_147d81ab520046a99dce94c11cb07368 = L.featureGroup(
+                {}
+            ).addTo(map_1b5da4eed477444cb2ad2e33e7f608dc);
+        
+    
+        function geo_json_56b53f439f024755b5e29d56f4872f91_styler(feature) {
+            switch(feature.id) {
+                case "13246": 
+                    return {"color": "black", "fillColor": "#bd0026", "fillOpacity": 0.9, "opacity": 0.2, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#ffffb2", "fillOpacity": 0.9, "opacity": 0.2, "weight": 1};
+            }
+        }
+
+        function geo_json_56b53f439f024755b5e29d56f4872f91_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_56b53f439f024755b5e29d56f4872f91 = L.geoJson(null, {
+                onEachFeature: geo_json_56b53f439f024755b5e29d56f4872f91_onEachFeature,
+            
+                style: geo_json_56b53f439f024755b5e29d56f4872f91_styler,
+        });
+
+        function geo_json_56b53f439f024755b5e29d56f4872f91_add (data) {
+            geo_json_56b53f439f024755b5e29d56f4872f91
+                .addData(data)
+                .addTo(choropleth_147d81ab520046a99dce94c11cb07368);
+        }
+            geo_json_56b53f439f024755b5e29d56f4872f91_add({"bbox": [-62.23680329999996, 16.676023500000042, -62.14453199899998, 16.821275600000035], "features": [{"bbox": [-62.22164446099998, 16.684476112000027, -62.18281173699995, 16.705036163000045], "geometry": {"coordinates": [[[-62.18281173699995, 16.702653885000075], [-62.20173724299997, 16.684476112000027], [-62.22164446099998, 16.70374864200005], [-62.20144653299997, 16.705036163000045], [-62.18281173699995, 16.702653885000075]]], "type": "Polygon"}, "id": "13244", "properties": {"0": 5.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2098", "GAUL_0": 168, "GAUL_1": 2098, "GAUL_2": 21780, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "Brodericks", "NAM_1_GAUL": "Brodericks", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14444, "SOVEREIGN": "GBR", "Shape_Area": 0.0004308242769, "Shape_Le_1": 0.0985597304419, "Shape_Le_2": 0.0985597304419, "Shape_Leng": 0.0985597304419, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 5.0, "mean": 0.0, "ratio": null, "row_number": 13339, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-62.21401214599996, 16.702653885000075, -62.170482634999985, 16.768884659000037], "geometry": {"coordinates": [[[-62.18281173699995, 16.702653885000075], [-62.20144653299997, 16.705036163000045], [-62.21401214599996, 16.72167015100007], [-62.198440551999965, 16.75821495100007], [-62.183467864999955, 16.768884659000037], [-62.170482634999985, 16.751091003000056], [-62.17347335799997, 16.70570182800003], [-62.18281173699995, 16.702653885000075]]], "type": "Polygon"}, "id": "13245", "properties": {"0": 23.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2099", "GAUL_0": 168, "GAUL_1": 2099, "GAUL_2": 21781, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "Central", "NAM_1_GAUL": "Central", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14445, "SOVEREIGN": "GBR", "Shape_Area": 0.00189310308009, "Shape_Le_1": 0.178684218385, "Shape_Le_2": 0.178684218385, "Shape_Leng": 0.178684218385, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 23.0, "mean": 0.0, "ratio": null, "row_number": 13340, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-62.183467864999955, 16.705547100000047, -62.14815399999998, 16.778266934000044], "geometry": {"coordinates": [[[-62.17347335799997, 16.70570182800003], [-62.170482634999985, 16.751091003000056], [-62.183467864999955, 16.768884659000037], [-62.17030883499996, 16.778266934000044], [-62.16504669999995, 16.766881599000044], [-62.14842169999997, 16.75680520000003], [-62.14815399999998, 16.705547100000047], [-62.17347335799997, 16.70570182800003]]], "type": "Polygon"}, "id": "13246", "properties": {"0": 17.0, "1": 2.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 10.526, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2100", "GAUL_0": 168, "GAUL_1": 2100, "GAUL_2": 21782, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "East", "NAM_1_GAUL": "East", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14446, "SOVEREIGN": "GBR", "Shape_Area": 0.00158140292863, "Shape_Le_1": 0.197667785306, "Shape_Le_2": 0.197667785306, "Shape_Leng": 0.197667785306, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 19.0, "mean": 0.0, "ratio": null, "row_number": 13341, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-62.21904598799995, 16.75821495100007, -62.17030883499996, 16.821275600000035], "geometry": {"coordinates": [[[-62.183467864999955, 16.768884659000037], [-62.198440551999965, 16.75821495100007], [-62.21904598799995, 16.781287207000048], [-62.205483699999945, 16.801762000000053], [-62.20445099999995, 16.821275600000035], [-62.180871698999965, 16.81634340000005], [-62.18175819999993, 16.800592100000074], [-62.17030883499996, 16.778266934000044], [-62.183467864999955, 16.768884659000037]]], "type": "Polygon"}, "id": "13247", "properties": {"0": 20.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2101", "GAUL_0": 168, "GAUL_1": 2101, "GAUL_2": 21783, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "North", "NAM_1_GAUL": "North", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14447, "SOVEREIGN": "GBR", "Shape_Area": 0.0018048795185, "Shape_Le_1": 0.203946405872, "Shape_Le_2": 0.203946405872, "Shape_Leng": 0.203946405872, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 20.0, "mean": 0.0, "ratio": 0.0, "row_number": 13342, "sum_x": 0.0, "sum_y": 40.366916200226434}, "type": "Feature"}, {"bbox": [-62.23680329999996, 16.70374864200005, -62.20144653299997, 16.732536094000068], "geometry": {"coordinates": [[[-62.20144653299997, 16.705036163000045], [-62.22164446099998, 16.70374864200005], [-62.23680329999996, 16.720807600000057], [-62.234066533999965, 16.732536094000068], [-62.21401214599996, 16.72167015100007], [-62.20144653299997, 16.705036163000045]]], "type": "Polygon"}, "id": "13248", "properties": {"0": 6.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2102", "GAUL_0": 168, "GAUL_1": 2102, "GAUL_2": 21784, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "Plymouth", "NAM_1_GAUL": "Plymouth", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14448, "SOVEREIGN": "GBR", "Shape_Area": 0.00058296906091, "Shape_Le_1": 0.115613295463, "Shape_Le_2": 0.115613295463, "Shape_Leng": 0.115613295463, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 6.0, "mean": 0.0, "ratio": null, "row_number": 13343, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-62.23506809999998, 16.72167015100007, -62.198440551999965, 16.781287207000048], "geometry": {"coordinates": [[[-62.198440551999965, 16.75821495100007], [-62.21401214599996, 16.72167015100007], [-62.234066533999965, 16.732536094000068], [-62.23506809999998, 16.748993700000028], [-62.22322829999996, 16.763454900000056], [-62.21904598799995, 16.781287207000048], [-62.198440551999965, 16.75821495100007]]], "type": "Polygon"}, "id": "13249", "properties": {"0": 14.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2103", "GAUL_0": 168, "GAUL_1": 2103, "GAUL_2": 21785, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "Salem", "NAM_1_GAUL": "Salem", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14449, "SOVEREIGN": "GBR", "Shape_Area": 0.00116639551467, "Shape_Le_1": 0.153343180829, "Shape_Le_2": 0.153343180829, "Shape_Leng": 0.153343180829, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 14.0, "mean": 0.0, "ratio": 0.0, "row_number": 13344, "sum_x": 0.0, "sum_y": 1.3257367938172584}, "type": "Feature"}, {"bbox": [-62.20173724299997, 16.676023500000042, -62.14453199899998, 16.70570182800003], "geometry": {"coordinates": [[[-62.20173724299997, 16.684476112000027], [-62.18281173699995, 16.702653885000075], [-62.17347335799997, 16.70570182800003], [-62.14815399999998, 16.705547100000047], [-62.14453199899998, 16.696145900000033], [-62.16062629999993, 16.67634010000006], [-62.19301409999997, 16.676023500000042], [-62.20173724299997, 16.684476112000027]]], "type": "Polygon"}, "id": "13250", "properties": {"0": 14.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2104", "GAUL_0": 168, "GAUL_1": 2104, "GAUL_2": 21786, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "South", "NAM_1_GAUL": "South", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14450, "SOVEREIGN": "GBR", "Shape_Area": 0.00124547290572, "Shape_Le_1": 0.147841307854, "Shape_Le_2": 0.147841307854, "Shape_Leng": 0.147841307854, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 14.0, "mean": 0.22200000000000003, "ratio": null, "row_number": 13345, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    var color_map_03f0da958b5544a485fe0d6257e4c0b3 = {};
+
+    
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.color = d3.scale.threshold()
+              .domain([0.0, 0.021094188376753507, 0.04218837675350701, 0.06328256513026052, 0.08437675350701403, 0.10547094188376753, 0.12656513026052105, 0.14765931863727455, 0.16875350701402805, 0.18984769539078156, 0.21094188376753506, 0.2320360721442886, 0.2531302605210421, 0.27422444889779557, 0.2953186372745491, 0.3164128256513026, 0.3375070140280561, 0.35860120240480964, 0.3796953907815631, 0.40078957915831664, 0.4218837675350701, 0.44297795591182365, 0.4640721442885772, 0.48516633266533066, 0.5062605210420842, 0.5273547094188377, 0.5484488977955911, 0.5695430861723447, 0.5906372745490982, 0.6117314629258518, 0.6328256513026052, 0.6539198396793587, 0.6750140280561122, 0.6961082164328657, 0.7172024048096193, 0.7382965931863726, 0.7593907815631262, 0.7804849699398797, 0.8015791583166333, 0.8226733466933868, 0.8437675350701402, 0.8648617234468937, 0.8859559118236473, 0.9070501002004008, 0.9281442885771544, 0.9492384769539078, 0.9703326653306613, 0.9914268537074148, 1.0125210420841684, 1.0336152304609219, 1.0547094188376753, 1.0758036072144288, 1.0968977955911823, 1.117991983967936, 1.1390861723446895, 1.1601803607214427, 1.1812745490981964, 1.2023687374749499, 1.2234629258517036, 1.2445571142284568, 1.2656513026052103, 1.286745490981964, 1.3078396793587175, 1.328933867735471, 1.3500280561122244, 1.371122244488978, 1.3922164328657314, 1.4133106212424849, 1.4344048096192386, 1.455498997995992, 1.4765931863727453, 1.497687374749499, 1.5187815631262525, 1.5398757515030062, 1.5609699398797594, 1.5820641282565129, 1.6031583166332666, 1.62425250501002, 1.6453466933867735, 1.666440881763527, 1.6875350701402805, 1.708629258517034, 1.7297234468937874, 1.7508176352705411, 1.7719118236472946, 1.793006012024048, 1.8141002004008016, 1.835194388777555, 1.8562885771543087, 1.877382765531062, 1.8984769539078157, 1.9195711422845692, 1.9406653306613226, 1.961759519038076, 1.9828537074148296, 2.0039478957915833, 2.0250420841683368, 2.0461362725450902, 2.0672304609218437, 2.088324649298597, 2.1094188376753507, 2.130513026052104, 2.1516072144288576, 2.172701402805611, 2.1937955911823646, 2.2148897795591185, 2.235983967935872, 2.257078156312625, 2.278172344689379, 2.2992665330661324, 2.3203607214428854, 2.3414549098196393, 2.362549098196393, 2.383643286573146, 2.4047374749498998, 2.4258316633266532, 2.446925851703407, 2.46802004008016, 2.4891142284569137, 2.5102084168336676, 2.5313026052104206, 2.552396793587174, 2.573490981963928, 2.594585170340681, 2.615679358717435, 2.6367735470941884, 2.657867735470942, 2.6789619238476954, 2.700056112224449, 2.7211503006012023, 2.742244488977956, 2.7633386773547093, 2.7844328657314628, 2.8055270541082167, 2.8266212424849697, 2.8477154308617236, 2.868809619238477, 2.88990380761523, 2.910997995991984, 2.9320921843687375, 2.9531863727454906, 2.9742805611222445, 2.995374749498998, 3.0164689378757514, 3.037563126252505, 3.0586573146292584, 3.0797515030060123, 3.1008456913827653, 3.121939879759519, 3.1430340681362727, 3.1641282565130258, 3.1852224448897792, 3.206316633266533, 3.2274108216432866, 3.24850501002004, 3.2695991983967936, 3.290693386773547, 3.3117875751503005, 3.332881763527054, 3.3539759519038075, 3.375070140280561, 3.3961643286573144, 3.417258517034068, 3.438352705410822, 3.459446893787575, 3.480541082164329, 3.5016352705410823, 3.5227294589178353, 3.543823647294589, 3.5649178356713427, 3.586012024048096, 3.6071062124248496, 3.628200400801603, 3.649294589178357, 3.67038877755511, 3.6914829659318635, 3.7125771543086175, 3.7336713426853705, 3.754765531062124, 3.775859719438878, 3.7969539078156314, 3.8180480961923844, 3.8391422845691383, 3.860236472945892, 3.8813306613226453, 3.9024248496993987, 3.923519038076152, 3.9446132264529057, 3.965707414829659, 3.9868016032064126, 4.007895791583167, 4.02898997995992, 4.0500841683366735, 4.0711783567134265, 4.0922725450901805, 4.113366733466934, 4.134460921843687, 4.15555511022044, 4.176649298597194, 4.197743486973948, 4.218837675350701, 4.239931863727455, 4.261026052104208, 4.282120240480961, 4.303214428857715, 4.324308617234469, 4.345402805611222, 4.366496993987976, 4.387591182364729, 4.408685370741482, 4.429779559118237, 4.45087374749499, 4.471967935871744, 4.493062124248497, 4.51415631262525, 4.535250501002004, 4.556344689378758, 4.577438877755511, 4.598533066132265, 4.619627254509018, 4.640721442885771, 4.661815631262526, 4.682909819639279, 4.704004008016032, 4.725098196392786, 4.746192384769539, 4.767286573146292, 4.7883807615230465, 4.8094749498997995, 4.830569138276553, 4.8516633266533065, 4.8727575150300595, 4.893851703406814, 4.914945891783567, 4.93604008016032, 4.957134268537074, 4.978228456913827, 4.99932264529058, 5.020416833667335, 5.041511022044088, 5.062605210420841, 5.083699398797595, 5.104793587174348, 5.125887775551102, 5.146981963927856, 5.168076152304609, 5.189170340681362, 5.210264529058116, 5.23135871743487, 5.252452905811624, 5.273547094188377, 5.29464128256513, 5.315735470941884, 5.336829659318637, 5.357923847695391, 5.379018036072145, 5.400112224448898, 5.421206412825651, 5.442300601202405, 5.463394789579159, 5.484488977955912, 5.5055831663326655, 5.526677354709419, 5.547771543086172, 5.5688657314629255, 5.589959919839679, 5.611054108216433, 5.632148296593186, 5.653242484969939, 5.674336673346693, 5.695430861723447, 5.7165250501002, 5.737619238476954, 5.758713426853707, 5.77980761523046, 5.800901803607214, 5.821995991983968, 5.843090180360721, 5.864184368737475, 5.885278557114228, 5.906372745490981, 5.927466933867736, 5.948561122244489, 5.969655310621242, 5.990749498997996, 6.011843687374749, 6.032937875751503, 6.054032064128257, 6.07512625250501, 6.096220440881764, 6.117314629258517, 6.13840881763527, 6.159503006012025, 6.180597194388778, 6.201691382765531, 6.222785571142285, 6.243879759519038, 6.264973947895791, 6.2860681362725455, 6.3071623246492985, 6.3282565130260515, 6.349350701402805, 6.3704448897795585, 6.391539078156313, 6.412633266533066, 6.433727454909819, 6.454821643286573, 6.475915831663326, 6.49701002004008, 6.518104208416834, 6.539198396793587, 6.56029258517034, 6.581386773547094, 6.602480961923847, 6.623575150300601, 6.644669338677355, 6.665763527054108, 6.686857715430861, 6.707951903807615, 6.729046092184369, 6.750140280561122, 6.771234468937876, 6.792328657314629, 6.813422845691383, 6.834517034068136, 6.85561122244489, 6.876705410821644, 6.897799599198397, 6.91889378757515, 6.939987975951904, 6.961082164328658, 6.982176352705411, 7.0032705410821645, 7.0243647294589175, 7.045458917835671, 7.0665531062124245, 7.087647294589178, 7.1087414829659314, 7.129835671342685, 7.150929859719438, 7.172024048096192, 7.193118236472946, 7.214212424849699, 7.235306613226453, 7.256400801603206, 7.277494989979959, 7.298589178356714, 7.319683366733467, 7.34077755511022, 7.361871743486974, 7.382965931863727, 7.40406012024048, 7.425154308617235, 7.446248496993988, 7.467342685370741, 7.488436873747495, 7.509531062124248, 7.530625250501003, 7.551719438877756, 7.572813627254509, 7.593907815631263, 7.615002004008016, 7.636096192384769, 7.657190380761524, 7.678284569138277, 7.69937875751503, 7.720472945891784, 7.741567134268537, 7.7626613226452905, 7.783755511022044, 7.8048496993987975, 7.8259438877755505, 7.847038076152304, 7.8681322645290575, 7.889226452905811, 7.910320641282565, 7.931414829659318, 7.952509018036072, 7.973603206412825, 7.994697394789579, 8.015791583166333, 8.036885771543085, 8.05797995991984, 8.079074148296593, 8.100168336673347, 8.1212625250501, 8.142356713426853, 8.163450901803607, 8.184545090180361, 8.205639278557115, 8.226733466933869, 8.247827655310621, 8.268921843687375, 8.290016032064129, 8.31111022044088, 8.332204408817635, 8.353298597194389, 8.374392785571143, 8.395486973947897, 8.416581162324649, 8.437675350701403, 8.458769539078155, 8.47986372745491, 8.500957915831663, 8.522052104208417, 8.54314629258517, 8.564240480961923, 8.585334669338678, 8.60642885771543, 8.627523046092184, 8.648617234468938, 8.66971142284569, 8.690805611222444, 8.711899799599198, 8.732993987975952, 8.754088176352706, 8.775182364729458, 8.796276553106212, 8.817370741482964, 8.83846492985972, 8.859559118236474, 8.880653306613226, 8.90174749498998, 8.922841683366732, 8.943935871743488, 8.965030060120242, 8.986124248496994, 9.007218436873748, 9.0283126252505, 9.049406813627254, 9.070501002004008, 9.091595190380762, 9.112689378757516, 9.133783567134268, 9.154877755511022, 9.175971943887774, 9.19706613226453, 9.218160320641283, 9.239254509018036, 9.26034869739479, 9.281442885771542, 9.302537074148297, 9.323631262525051, 9.344725450901803, 9.365819639278557, 9.38691382765531, 9.408008016032063, 9.429102204408819, 9.450196392785571, 9.471290581162325, 9.492384769539077, 9.513478957915831, 9.534573146292583, 9.555667334669339, 9.576761523046093, 9.597855711422845, 9.618949899799599, 9.640044088176351, 9.661138276553107, 9.68223246492986, 9.703326653306613, 9.724420841683367, 9.745515030060119, 9.766609218436873, 9.787703406813629, 9.80879759519038, 9.829891783567135, 9.850985971943887, 9.87208016032064, 9.893174348697395, 9.914268537074149, 9.935362725450902, 9.956456913827655, 9.977551102204409, 9.99864529058116, 10.019739478957915, 10.04083366733467, 10.061927855711422, 10.083022044088176, 10.104116232464929, 10.125210420841682, 10.146304609218438, 10.16739879759519, 10.188492985971944, 10.209587174348696, 10.23068136272545, 10.251775551102204, 10.272869739478958, 10.293963927855712, 10.315058116232464, 10.336152304609218, 10.357246492985972, 10.378340681362724, 10.39943486973948, 10.420529058116232, 10.441623246492986, 10.46271743486974, 10.483811623246492, 10.504905811623248, 10.526])
+              .range(['#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026']);
+    
+
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.x = d3.scale.linear()
+              .domain([0.0, 10.526])
+              .range([0, 400]);
+
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.legend = L.control({position: 'topright'});
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.legend.addTo(map_1b5da4eed477444cb2ad2e33e7f608dc);
+
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.xAxis = d3.svg.axis()
+        .scale(color_map_03f0da958b5544a485fe0d6257e4c0b3.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 1.7543333333333333, 3.5086666666666666, 5.263, 7.017333333333333, 8.771666666666667, 10.526]);
+
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.g = color_map_03f0da958b5544a485fe0d6257e4c0b3.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.g.selectAll("rect")
+        .data(color_map_03f0da958b5544a485fe0d6257e4c0b3.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_03f0da958b5544a485fe0d6257e4c0b3.x(color_map_03f0da958b5544a485fe0d6257e4c0b3.color.domain()[i - 1]) : color_map_03f0da958b5544a485fe0d6257e4c0b3.x.range()[0],
+            x1: i < color_map_03f0da958b5544a485fe0d6257e4c0b3.color.domain().length ? color_map_03f0da958b5544a485fe0d6257e4c0b3.x(color_map_03f0da958b5544a485fe0d6257e4c0b3.color.domain()[i]) : color_map_03f0da958b5544a485fe0d6257e4c0b3.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 10)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_03f0da958b5544a485fe0d6257e4c0b3.g.call(color_map_03f0da958b5544a485fe0d6257e4c0b3.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text('Land area where elevation is below 5 meters (% of total land area)');
+    
+        function geo_json_ceba721db9b94adfae929e19bba3a176_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#000000", "fillColor": "#ffffff", "fillOpacity": 0.1, "weight": 0.1};
+            }
+        }
+        function geo_json_ceba721db9b94adfae929e19bba3a176_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#000000", "fillColor": "#000000", "fillOpacity": 0.5, "weight": 0.1};
+            }
+        }
+
+        function geo_json_ceba721db9b94adfae929e19bba3a176_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_ceba721db9b94adfae929e19bba3a176.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_ceba721db9b94adfae929e19bba3a176_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_ceba721db9b94adfae929e19bba3a176 = L.geoJson(null, {
+                onEachFeature: geo_json_ceba721db9b94adfae929e19bba3a176_onEachFeature,
+            
+                style: geo_json_ceba721db9b94adfae929e19bba3a176_styler,
+        });
+
+        function geo_json_ceba721db9b94adfae929e19bba3a176_add (data) {
+            geo_json_ceba721db9b94adfae929e19bba3a176
+                .addData(data)
+                .addTo(map_1b5da4eed477444cb2ad2e33e7f608dc);
+        }
+            geo_json_ceba721db9b94adfae929e19bba3a176_add({"bbox": [-62.23680329999996, 16.676023500000042, -62.14453199899998, 16.821275600000035], "features": [{"bbox": [-62.22164446099998, 16.684476112000027, -62.18281173699995, 16.705036163000045], "geometry": {"coordinates": [[[-62.18281173699995, 16.702653885000075], [-62.20173724299997, 16.684476112000027], [-62.22164446099998, 16.70374864200005], [-62.20144653299997, 16.705036163000045], [-62.18281173699995, 16.702653885000075]]], "type": "Polygon"}, "id": "13244", "properties": {"0": 5.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2098", "GAUL_0": 168, "GAUL_1": 2098, "GAUL_2": 21780, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "Brodericks", "NAM_1_GAUL": "Brodericks", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14444, "SOVEREIGN": "GBR", "Shape_Area": 0.0004308242769, "Shape_Le_1": 0.0985597304419, "Shape_Le_2": 0.0985597304419, "Shape_Leng": 0.0985597304419, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 5.0, "mean": 0.0, "ratio": null, "row_number": 13339, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-62.21401214599996, 16.702653885000075, -62.170482634999985, 16.768884659000037], "geometry": {"coordinates": [[[-62.18281173699995, 16.702653885000075], [-62.20144653299997, 16.705036163000045], [-62.21401214599996, 16.72167015100007], [-62.198440551999965, 16.75821495100007], [-62.183467864999955, 16.768884659000037], [-62.170482634999985, 16.751091003000056], [-62.17347335799997, 16.70570182800003], [-62.18281173699995, 16.702653885000075]]], "type": "Polygon"}, "id": "13245", "properties": {"0": 23.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2099", "GAUL_0": 168, "GAUL_1": 2099, "GAUL_2": 21781, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "Central", "NAM_1_GAUL": "Central", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14445, "SOVEREIGN": "GBR", "Shape_Area": 0.00189310308009, "Shape_Le_1": 0.178684218385, "Shape_Le_2": 0.178684218385, "Shape_Leng": 0.178684218385, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 23.0, "mean": 0.0, "ratio": null, "row_number": 13340, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-62.183467864999955, 16.705547100000047, -62.14815399999998, 16.778266934000044], "geometry": {"coordinates": [[[-62.17347335799997, 16.70570182800003], [-62.170482634999985, 16.751091003000056], [-62.183467864999955, 16.768884659000037], [-62.17030883499996, 16.778266934000044], [-62.16504669999995, 16.766881599000044], [-62.14842169999997, 16.75680520000003], [-62.14815399999998, 16.705547100000047], [-62.17347335799997, 16.70570182800003]]], "type": "Polygon"}, "id": "13246", "properties": {"0": 17.0, "1": 2.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 10.526, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2100", "GAUL_0": 168, "GAUL_1": 2100, "GAUL_2": 21782, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "East", "NAM_1_GAUL": "East", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14446, "SOVEREIGN": "GBR", "Shape_Area": 0.00158140292863, "Shape_Le_1": 0.197667785306, "Shape_Le_2": 0.197667785306, "Shape_Leng": 0.197667785306, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 19.0, "mean": 0.0, "ratio": null, "row_number": 13341, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-62.21904598799995, 16.75821495100007, -62.17030883499996, 16.821275600000035], "geometry": {"coordinates": [[[-62.183467864999955, 16.768884659000037], [-62.198440551999965, 16.75821495100007], [-62.21904598799995, 16.781287207000048], [-62.205483699999945, 16.801762000000053], [-62.20445099999995, 16.821275600000035], [-62.180871698999965, 16.81634340000005], [-62.18175819999993, 16.800592100000074], [-62.17030883499996, 16.778266934000044], [-62.183467864999955, 16.768884659000037]]], "type": "Polygon"}, "id": "13247", "properties": {"0": 20.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2101", "GAUL_0": 168, "GAUL_1": 2101, "GAUL_2": 21783, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "North", "NAM_1_GAUL": "North", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14447, "SOVEREIGN": "GBR", "Shape_Area": 0.0018048795185, "Shape_Le_1": 0.203946405872, "Shape_Le_2": 0.203946405872, "Shape_Leng": 0.203946405872, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 20.0, "mean": 0.0, "ratio": 0.0, "row_number": 13342, "sum_x": 0.0, "sum_y": 40.366916200226434}, "type": "Feature"}, {"bbox": [-62.23680329999996, 16.70374864200005, -62.20144653299997, 16.732536094000068], "geometry": {"coordinates": [[[-62.20144653299997, 16.705036163000045], [-62.22164446099998, 16.70374864200005], [-62.23680329999996, 16.720807600000057], [-62.234066533999965, 16.732536094000068], [-62.21401214599996, 16.72167015100007], [-62.20144653299997, 16.705036163000045]]], "type": "Polygon"}, "id": "13248", "properties": {"0": 6.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2102", "GAUL_0": 168, "GAUL_1": 2102, "GAUL_2": 21784, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "Plymouth", "NAM_1_GAUL": "Plymouth", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14448, "SOVEREIGN": "GBR", "Shape_Area": 0.00058296906091, "Shape_Le_1": 0.115613295463, "Shape_Le_2": 0.115613295463, "Shape_Leng": 0.115613295463, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 6.0, "mean": 0.0, "ratio": null, "row_number": 13343, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}, {"bbox": [-62.23506809999998, 16.72167015100007, -62.198440551999965, 16.781287207000048], "geometry": {"coordinates": [[[-62.198440551999965, 16.75821495100007], [-62.21401214599996, 16.72167015100007], [-62.234066533999965, 16.732536094000068], [-62.23506809999998, 16.748993700000028], [-62.22322829999996, 16.763454900000056], [-62.21904598799995, 16.781287207000048], [-62.198440551999965, 16.75821495100007]]], "type": "Polygon"}, "id": "13249", "properties": {"0": 14.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2103", "GAUL_0": 168, "GAUL_1": 2103, "GAUL_2": 21785, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "Salem", "NAM_1_GAUL": "Salem", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14449, "SOVEREIGN": "GBR", "Shape_Area": 0.00116639551467, "Shape_Le_1": 0.153343180829, "Shape_Le_2": 0.153343180829, "Shape_Leng": 0.153343180829, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 14.0, "mean": 0.0, "ratio": 0.0, "row_number": 13344, "sum_x": 0.0, "sum_y": 1.3257367938172584}, "type": "Feature"}, {"bbox": [-62.20173724299997, 16.676023500000042, -62.14453199899998, 16.70570182800003], "geometry": {"coordinates": [[[-62.20173724299997, 16.684476112000027], [-62.18281173699995, 16.702653885000075], [-62.17347335799997, 16.70570182800003], [-62.14815399999998, 16.705547100000047], [-62.14453199899998, 16.696145900000033], [-62.16062629999993, 16.67634010000006], [-62.19301409999997, 16.676023500000042], [-62.20173724299997, 16.684476112000027]]], "type": "Polygon"}, "id": "13250", "properties": {"0": 14.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "GAD_ID_0": "MS000168", "GAD_ID_1": "2104", "GAUL_0": 168, "GAUL_1": 2104, "GAUL_2": 21786, "HASC_0": "MS", "HASC_1": null, "HASC_2": null, "ISO_A2": "MS", "ISO_A3": "MSR", "LAST_UPDTE": "20171231", "NAM_0": "Montserrat (U.K.)", "NAM_0_Alt": null, "NAM_1": "South", "NAM_1_GAUL": "South", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14450, "SOVEREIGN": "GBR", "Shape_Area": 0.00124547290572, "Shape_Le_1": 0.147841307854, "Shape_Le_2": 0.147841307854, "Shape_Leng": 0.147841307854, "WB_A3": "MSR", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 14.0, "mean": 0.22200000000000003, "ratio": null, "row_number": 13345, "sum_x": 0.0, "sum_y": 0.0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_ceba721db9b94adfae929e19bba3a176.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["row_number", "NAM_2", "NAM_1", "NAM_0", "AG_LND_EL5M_ZS", "mean", "0", "1", "area"];
+    let aliases = ["District number: ", "District name: ", "State: ", "Country: ", "Land area where elevation is below 5 meters (% of total land area): ", "mean", "0: more than 5 m ", "1: less than 5 m", "Total area (km2)"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "parseHtml": true, "sticky": true});
+                     
+    
+            var layer_control_50ef3900fc9c4163af9736e54f373c16 = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_148a37893d0f47ec9aa817bb0baebcc3,
+                    "cartodbpositron" : tile_layer_da05d439deaa427a902f0c9a0c797f2a,
+                    "openstreetmap" : tile_layer_c5b8aaf576064a90837c652884e19860,
+                    "stamenwatercolor" : tile_layer_8f0e9457fe5c4fad8289d8718441b669,
+                },
+                overlays :  {
+                    "choropleth" : choropleth_147d81ab520046a99dce94c11cb07368,
+                },
+            };
+            L.control.layers(
+                layer_control_50ef3900fc9c4163af9736e54f373c16.base_layers,
+                layer_control_50ef3900fc9c4163af9736e54f373c16.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1b5da4eed477444cb2ad2e33e7f608dc);
+            tile_layer_da05d439deaa427a902f0c9a0c797f2a.remove();
+            tile_layer_c5b8aaf576064a90837c652884e19860.remove();
+            tile_layer_8f0e9457fe5c4fad8289d8718441b669.remove();
+        
+</script>
