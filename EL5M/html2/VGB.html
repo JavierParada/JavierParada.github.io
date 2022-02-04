@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ccc556ea5fcb44daa228910ab75f1fab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    
+                    <style>
+                        .foliumtooltip {
+                            background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>    
+    
+                 <h3 align="center" style="font-size:24px"><b>British Virgin Islands (U.K.) (VGB):</b> 4 districts</h3>
+                 
+    
+            <div class="folium-map" id="map_ccc556ea5fcb44daa228910ab75f1fab" ></div>
+        
+</body>
+<script>    
+    
+            var map_ccc556ea5fcb44daa228910ab75f1fab = L.map(
+                "map_ccc556ea5fcb44daa228910ab75f1fab",
+                {
+                    center: [18.518708285435007, -64.52785449704295],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+            function objects_in_front() {
+                    geo_json_60e9a57225274771a6b123db03c95a9e.bringToFront();
+            };
+            map_ccc556ea5fcb44daa228910ab75f1fab.on("overlayadd", objects_in_front);
+            $(document).ready(objects_in_front);
+
+        
+    
+            var tile_layer_1cdcd770ef824710906428d92b5889e3 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ccc556ea5fcb44daa228910ab75f1fab);
+        
+    
+            var tile_layer_635fce489398457183e51fe25924a97b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ccc556ea5fcb44daa228910ab75f1fab);
+        
+    
+            var tile_layer_6d58a4329be84a30b3283dc37bf234e6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ccc556ea5fcb44daa228910ab75f1fab);
+        
+    
+            var tile_layer_a6af55a385a849cb838c9e5cda222773 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ccc556ea5fcb44daa228910ab75f1fab);
+        
+    
+            var choropleth_0831b205fa3249c6b547d81fb2336ac8 = L.featureGroup(
+                {}
+            ).addTo(map_ccc556ea5fcb44daa228910ab75f1fab);
+        
+    
+        function geo_json_d1054deb07f1440f92ef0fecc647869f_styler(feature) {
+            switch(feature.id) {
+                case "13186": 
+                    return {"color": "black", "fillColor": "#bd0026", "fillOpacity": 0.9, "opacity": 0.2, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#ffffb2", "fillOpacity": 0.9, "opacity": 0.2, "weight": 1};
+            }
+        }
+
+        function geo_json_d1054deb07f1440f92ef0fecc647869f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d1054deb07f1440f92ef0fecc647869f = L.geoJson(null, {
+                onEachFeature: geo_json_d1054deb07f1440f92ef0fecc647869f_onEachFeature,
+            
+                style: geo_json_d1054deb07f1440f92ef0fecc647869f_styler,
+        });
+
+        function geo_json_d1054deb07f1440f92ef0fecc647869f_add (data) {
+            geo_json_d1054deb07f1440f92ef0fecc647869f
+                .addData(data)
+                .addTo(choropleth_0831b205fa3249c6b547d81fb2336ac8);
+        }
+            geo_json_d1054deb07f1440f92ef0fecc647869f_add({"bbox": [-64.75401429999994, 18.382386000000054, -64.27279699999997, 18.74957960000006], "features": [{"bbox": [-64.41450079999998, 18.698915000000056, -64.27279699999997, 18.74957960000006], "geometry": {"coordinates": [[[-64.31613089999996, 18.743435600000055], [-64.28775009999998, 18.723201300000028], [-64.27279699999997, 18.704521400000033], [-64.28859869999997, 18.698915000000056], [-64.32168459999997, 18.71661880000005], [-64.34846469999997, 18.71731070000004], [-64.38847919999995, 18.727097800000024], [-64.39939329999999, 18.722580700000037], [-64.41450079999998, 18.738636400000075], [-64.38235619999995, 18.748511500000063], [-64.34507019999995, 18.74167570000003], [-64.33513369999997, 18.74957960000006], [-64.31613089999996, 18.743435600000055]]], "type": "Polygon"}, "id": "13186", "properties": {"0": 4.0, "1": 33.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 89.189, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "EN_POP_EL5M_ZS": 96.4, "GAD_ID_0": "VG000039", "GAD_ID_1": "39503", "GAUL_0": 39, "GAUL_1": 39503, "GAUL_2": 68746, "HASC_0": "VG", "HASC_1": null, "HASC_2": null, "ISO_A2": "VG", "ISO_A3": "VGB", "LAST_UPDTE": "20171231", "NAM_0": "British Virgin Islands (U.K.)", "NAM_0_Alt": null, "NAM_1": "Anegada", "NAM_1_GAUL": "Anegada", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14382, "SOVEREIGN": "GBR", "Shape_Area": 0.00341276277087, "Shape_Le_1": 0.36890663489, "Shape_Le_2": 0.36890663489, "Shape_Leng": 0.36890663489, "WB_A3": "VGB", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 37.0, "mean": 87.155, "row_number": 13277, "worldpop_den": 224.55, "worldpop_num": 216.47}, "type": "Feature"}, {"bbox": [-64.75401429999994, 18.435038000000077, -64.72224049899995, 18.457502700000077], "geometry": {"coordinates": [[[-64.75262509899994, 18.457502700000077], [-64.72825629899995, 18.454205700000045], [-64.72224049899995, 18.44459500000005], [-64.73641639799996, 18.435038000000077], [-64.75401429999994, 18.442830000000072], [-64.75262509899994, 18.457502700000077]]], "type": "Polygon"}, "id": "13187", "properties": {"0": 5.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "EN_POP_EL5M_ZS": 5.94, "GAD_ID_0": "VG000039", "GAD_ID_1": "39504", "GAUL_0": 39, "GAUL_1": 39504, "GAUL_2": 68747, "HASC_0": "VG", "HASC_1": null, "HASC_2": null, "ISO_A2": "VG", "ISO_A3": "VGB", "LAST_UPDTE": "20171231", "NAM_0": "British Virgin Islands (U.K.)", "NAM_0_Alt": null, "NAM_1": "Jost van Dyke", "NAM_1_GAUL": "Jost van Dyke", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14383, "SOVEREIGN": "GBR", "Shape_Area": 0.00080031951582, "Shape_Le_1": 0.266346282033, "Shape_Le_2": 0.266346282033, "Shape_Leng": 0.266346282033, "WB_A3": "VGB", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 5.0, "mean": 4.694, "row_number": 13278, "worldpop_den": 187.0, "worldpop_num": 11.11}, "type": "Feature"}, {"bbox": [-64.67770299999995, 18.382386000000054, -64.55328919999994, 18.489668600000073], "geometry": {"coordinates": [[[[-64.56362299999995, 18.459176400000047], [-64.55328919999994, 18.441841500000066], [-64.57918939899997, 18.413761000000022], [-64.59039139999999, 18.411837500000047], [-64.60880639999993, 18.425306300000045], [-64.61764339999996, 18.40589310000007], [-64.67096729999997, 18.382386000000054], [-64.67770299999995, 18.401529200000027], [-64.66616309999995, 18.418752400000074], [-64.65939129999998, 18.44433900000007], [-64.64238429999995, 18.453761299000064], [-64.59225449999997, 18.44566560000004], [-64.56362299999995, 18.459176400000047]]], [[[-64.57829809999998, 18.489668600000073], [-64.55775069999999, 18.47291270000005], [-64.57284029999994, 18.46832950000004], [-64.57829809999998, 18.489668600000073]]]], "type": "MultiPolygon"}, "id": "13188", "properties": {"0": 54.0, "1": 2.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 3.5709999999999997, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "EN_POP_EL5M_ZS": 2.6, "GAD_ID_0": "VG000039", "GAD_ID_1": "39506", "GAUL_0": 39, "GAUL_1": 39506, "GAUL_2": 68749, "HASC_0": "VG", "HASC_1": null, "HASC_2": null, "ISO_A2": "VG", "ISO_A3": "VGB", "LAST_UPDTE": "20171231", "NAM_0": "British Virgin Islands (U.K.)", "NAM_0_Alt": null, "NAM_1": "Tortola", "NAM_1_GAUL": "Tortola", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14385, "SOVEREIGN": "GBR", "Shape_Area": 0.00599411302982, "Shape_Le_1": 1.35516053898, "Shape_Le_2": 1.35516053898, "Shape_Leng": 1.35516053898, "WB_A3": "VGB", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 56.0, "mean": 3.231, "row_number": 13280, "worldpop_den": 18827.12, "worldpop_num": 488.85}, "type": "Feature"}, {"bbox": [-64.44368589999993, 18.429847000000052, -64.38029539999997, 18.50458230000004], "geometry": {"coordinates": [[[-64.39727749999997, 18.50458230000004], [-64.38029539999997, 18.489192200000048], [-64.39134739999997, 18.46883260000004], [-64.40535579999994, 18.468780200000026], [-64.42603699999995, 18.458454300000028], [-64.42814089999996, 18.429847000000052], [-64.44368589999993, 18.432829500000025], [-64.43910789999995, 18.461995100000024], [-64.41912579999996, 18.464529800000037], [-64.41069979999997, 18.500117200000034], [-64.39727749999997, 18.50458230000004]]], "type": "Polygon"}, "id": "13189", "properties": {"0": 16.0, "1": 1.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 5.882, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "EN_POP_EL5M_ZS": 7.97, "GAD_ID_0": "VG000039", "GAD_ID_1": "39507", "GAUL_0": 39, "GAUL_1": 39507, "GAUL_2": 68750, "HASC_0": "VG", "HASC_1": null, "HASC_2": null, "ISO_A2": "VG", "ISO_A3": "VGB", "LAST_UPDTE": "20171231", "NAM_0": "British Virgin Islands (U.K.)", "NAM_0_Alt": null, "NAM_1": "Virgin Gorda", "NAM_1_GAUL": "Virgin Gorda", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14386, "SOVEREIGN": "GBR", "Shape_Area": 0.00210366883809, "Shape_Le_1": 0.802538379073, "Shape_Le_2": 0.802538379073, "Shape_Leng": 0.802538379073, "WB_A3": "VGB", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 17.0, "mean": 5.026, "row_number": 13281, "worldpop_den": 2885.78, "worldpop_num": 230.03}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    var color_map_329745c120a24507bf27648d55ba15aa = {};
+
+    
+    color_map_329745c120a24507bf27648d55ba15aa.color = d3.scale.threshold()
+              .domain([2.6, 2.7879759519038076, 2.975951903807615, 3.1639278557114228, 3.3519038076152308, 3.5398797595190383, 3.727855711422846, 3.915831663326654, 4.103807615230461, 4.291783567134269, 4.479759519038076, 4.667735470941884, 4.855711422845692, 5.043687374749499, 5.231663326653307, 5.419639278557115, 5.607615230460922, 5.7955911823647295, 5.9835671342685375, 6.1715430861723455, 6.359519038076153, 6.54749498997996, 6.735470941883769, 6.923446893787576, 7.111422845691383, 7.299398797595192, 7.487374749498999, 7.675350701402806, 7.863326653306615, 8.051302605210422, 8.239278557114229, 8.427254509018036, 8.615230460921845, 8.803206412825652, 8.99118236472946, 9.179158316633268, 9.367134268537075, 9.555110220440882, 9.743086172344691, 9.931062124248498, 10.119038076152306, 10.307014028056114, 10.49498997995992, 10.682965931863729, 10.870941883767536, 11.058917835671345, 11.24689378757515, 11.434869739478959, 11.622845691382766, 11.810821643286575, 11.998797595190382, 12.18677354709419, 12.374749498997996, 12.562725450901805, 12.750701402805612, 12.938677354709421, 13.126653306613228, 13.314629258517034, 13.502605210420842, 13.69058116232465, 13.878557114228459, 14.066533066132266, 14.254509018036073, 14.44248496993988, 14.630460921843689, 14.818436873747496, 15.006412825651305, 15.19438877755511, 15.382364729458919, 15.570340681362726, 15.758316633266535, 15.946292585170342, 16.13426853707415, 16.322244488977958, 16.510220440881767, 16.698196392785572, 16.88617234468938, 17.07414829659319, 17.262124248496995, 17.450100200400804, 17.638076152304613, 17.82605210420842, 18.014028056112227, 18.202004008016033, 18.38997995991984, 18.57795591182365, 18.76593186372746, 18.953907815631265, 19.141883767535074, 19.32985971943888, 19.51783567134269, 19.705811623246497, 19.893787575150302, 20.08176352705411, 20.26973947895792, 20.45771543086173, 20.645691382765534, 20.83366733466934, 21.021643286573152, 21.209619238476957, 21.397595190380766, 21.58557114228457, 21.77354709418838, 21.96152304609219, 22.149498997995995, 22.337474949899804, 22.525450901803612, 22.713426853707418, 22.901402805611227, 23.089378757515032, 23.277354709418844, 23.46533066132265, 23.65330661322646, 23.841282565130264, 24.02925851703407, 24.217234468937882, 24.405210420841687, 24.593186372745496, 24.7811623246493, 24.96913827655311, 25.15711422845692, 25.345090180360724, 25.533066132264533, 25.721042084168342, 25.909018036072148, 26.096993987975956, 26.284969939879762, 26.472945891783574, 26.66092184368738, 26.848897795591185, 27.036873747494994, 27.224849699398803, 27.41282565130261, 27.600801603206417, 27.788777555110222, 27.976753507014035, 28.16472945891784, 28.35270541082165, 28.540681362725454, 28.72865731462926, 28.916633266533072, 29.104609218436877, 29.292585170340686, 29.48056112224449, 29.6685370741483, 29.85651302605211, 30.044488977955915, 30.232464929859724, 30.420440881763533, 30.60841683366734, 30.796392785571147, 30.984368737474952, 31.172344689378765, 31.36032064128257, 31.54829659318638, 31.736272545090184, 31.924248496993993, 32.1122244488978, 32.30020040080161, 32.488176352705416, 32.676152304609225, 32.86412825651303, 33.052104208416836, 33.240080160320645, 33.42805611222445, 33.61603206412826, 33.804008016032064, 33.99198396793587, 34.17995991983968, 34.36793587174349, 34.5559118236473, 34.74388777555111, 34.93186372745492, 35.11983967935872, 35.30781563126253, 35.495791583166344, 35.683767535070146, 35.871743486973955, 36.05971943887776, 36.247695390781566, 36.43567134268538, 36.62364729458918, 36.81162324649299, 36.9995991983968, 37.1875751503006, 37.37555110220442, 37.56352705410822, 37.75150300601203, 37.93947895791584, 38.12745490981964, 38.315430861723456, 38.503406813627265, 38.69138276553107, 38.879358717434876, 39.06733466933868, 39.255310621242494, 39.4432865731463, 39.631262525050104, 39.81923847695391, 40.007214428857715, 40.19519038076153, 40.38316633266534, 40.57114228456914, 40.75911823647295, 40.94709418837676, 41.13507014028057, 41.32304609218438, 41.51102204408818, 41.69899799599199, 41.8869739478958, 42.074949899799606, 42.262925851703415, 42.45090180360722, 42.638877755511025, 42.826853707414834, 43.01482965931864, 43.20280561122245, 43.39078156312626, 43.57875751503006, 43.76673346693387, 43.95470941883769, 44.14268537074149, 44.3306613226453, 44.5186372745491, 44.706613226452916, 44.894589178356725, 45.08256513026053, 45.270541082164335, 45.45851703406814, 45.64649298597195, 45.83446893787576, 46.022444889779564, 46.21042084168337, 46.39839679358718, 46.58637274549099, 46.7743486973948, 46.9623246492986, 47.15030060120241, 47.33827655310622, 47.52625250501003, 47.71422845691384, 47.902204408817646, 48.09018036072145, 48.278156312625256, 48.466132264529065, 48.654108216432874, 48.84208416833668, 49.030060120240485, 49.218036072144294, 49.40601202404811, 49.59398797595191, 49.78196392785572, 49.96993987975952, 50.15791583166333, 50.34589178356715, 50.53386773547095, 50.72184368737476, 50.90981963927856, 51.09779559118237, 51.285771543086184, 51.473747494989986, 51.661723446893795, 51.849699398797604, 52.037675350701406, 52.22565130260522, 52.413627254509024, 52.60160320641283, 52.78957915831664, 52.97755511022044, 53.16553106212426, 53.35350701402807, 53.54148296593187, 53.72945891783568, 53.91743486973948, 54.1054108216433, 54.293386773547105, 54.48136272545091, 54.669338677354716, 54.85731462925852, 55.045290581162334, 55.23326653306614, 55.421242484969945, 55.60921843687375, 55.79719438877756, 55.98517034068137, 56.17314629258518, 56.36112224448898, 56.54909819639279, 56.7370741482966, 56.92505010020041, 57.11302605210422, 57.301002004008026, 57.48897795591183, 57.676953907815644, 57.864929859719446, 58.052905811623255, 58.240881763527064, 58.428857715430865, 58.61683366733468, 58.80480961923849, 58.99278557114229, 59.1807615230461, 59.3687374749499, 59.55671342685372, 59.74468937875753, 59.93266533066133, 60.12064128256514, 60.30861723446894, 60.496593186372756, 60.684569138276565, 60.87254509018037, 61.060521042084176, 61.248496993987985, 61.43647294589179, 61.6244488977956, 61.812424849699404, 62.00040080160321, 62.18837675350702, 62.37635270541083, 62.56432865731464, 62.75230460921845, 62.94028056112225, 63.12825651302606, 63.31623246492987, 63.50420841683368, 63.692184368737486, 63.88016032064129, 64.06813627254509, 64.25611222444891, 64.44408817635271, 64.63206412825652, 64.82004008016033, 65.00801603206413, 65.19599198396794, 65.38396793587175, 65.57194388777556, 65.75991983967936, 65.94789579158316, 66.13587174348699, 66.32384769539078, 66.51182364729459, 66.6997995991984, 66.88777555110221, 67.07575150300602, 67.26372745490983, 67.45170340681364, 67.63967935871743, 67.82765531062124, 68.01563126252505, 68.20360721442886, 68.39158316633268, 68.57955911823647, 68.76753507014028, 68.95551102204409, 69.1434869739479, 69.33146292585171, 69.5194388777555, 69.70741482965933, 69.89539078156312, 70.08336673346693, 70.27134268537075, 70.45931863727455, 70.64729458917836, 70.83527054108217, 71.02324649298598, 71.21122244488978, 71.3991983967936, 71.5871743486974, 71.7751503006012, 71.963126252505, 72.15110220440883, 72.33907815631262, 72.52705410821643, 72.71503006012024, 72.90300601202405, 73.09098196392786, 73.27895791583167, 73.46693386773548, 73.65490981963927, 73.8428857715431, 74.0308617234469, 74.2188376753507, 74.40681362725452, 74.59478957915832, 74.78276553106213, 74.97074148296593, 75.15871743486974, 75.34669338677355, 75.53466933867735, 75.72264529058117, 75.91062124248498, 76.09859719438877, 76.2865731462926, 76.47454909819639, 76.6625250501002, 76.85050100200402, 77.03847695390782, 77.22645290581163, 77.41442885771542, 77.60240480961924, 77.79038076152305, 77.97835671342685, 78.16633266533067, 78.35430861723447, 78.54228456913827, 78.7302605210421, 78.91823647294589, 79.1062124248497, 79.29418837675351, 79.48216432865732, 79.67014028056113, 79.85811623246494, 80.04609218436875, 80.23406813627254, 80.42204408817635, 80.61002004008017, 80.79799599198397, 80.98597194388778, 81.17394789579158, 81.3619238476954, 81.5498997995992, 81.73787575150301, 81.92585170340682, 82.11382765531062, 82.30180360721444, 82.48977955911825, 82.67775551102204, 82.86573146292585, 83.05370741482966, 83.24168336673347, 83.42965931863728, 83.61763527054109, 83.8056112224449, 83.99358717434869, 84.18156312625251, 84.36953907815632, 84.55751503006012, 84.74549098196394, 84.93346693386773, 85.12144288577154, 85.30941883767537, 85.49739478957916, 85.68537074148297, 85.87334669338676, 86.06132264529059, 86.2492985971944, 86.43727454909819, 86.62525050100201, 86.81322645290582, 87.00120240480962, 87.18917835671344, 87.37715430861724, 87.56513026052104, 87.75310621242487, 87.94108216432866, 88.12905811623247, 88.31703406813627, 88.50501002004009, 88.6929859719439, 88.88096192384769, 89.06893787575152, 89.25691382765531, 89.44488977955912, 89.63286573146294, 89.82084168336674, 90.00881763527055, 90.19679358717435, 90.38476953907816, 90.57274549098197, 90.76072144288578, 90.94869739478959, 91.13667334669339, 91.3246492985972, 91.51262525050102, 91.70060120240481, 91.88857715430862, 92.07655310621243, 92.26452905811624, 92.45250501002005, 92.64048096192386, 92.82845691382767, 93.01643286573146, 93.20440881763528, 93.39238476953909, 93.58036072144289, 93.7683366733467, 93.9563126252505, 94.14428857715431, 94.33226452905812, 94.52024048096193, 94.70821643286574, 94.89619238476953, 95.08416833667336, 95.27214428857717, 95.46012024048096, 95.64809619238478, 95.83607214428858, 96.02404809619239, 96.21202404809621, 96.4])
+              .range(['#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#ffffb2', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#f03b20', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026', '#bd0026']);
+    
+
+    color_map_329745c120a24507bf27648d55ba15aa.x = d3.scale.linear()
+              .domain([2.6, 96.4])
+              .range([0, 400]);
+
+    color_map_329745c120a24507bf27648d55ba15aa.legend = L.control({position: 'topright'});
+    color_map_329745c120a24507bf27648d55ba15aa.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_329745c120a24507bf27648d55ba15aa.legend.addTo(map_ccc556ea5fcb44daa228910ab75f1fab);
+
+    color_map_329745c120a24507bf27648d55ba15aa.xAxis = d3.svg.axis()
+        .scale(color_map_329745c120a24507bf27648d55ba15aa.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([2.6, 18.233333333333334, 33.86666666666667, 49.50000000000001, 65.13333333333334, 80.76666666666667, 96.4]);
+
+    color_map_329745c120a24507bf27648d55ba15aa.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_329745c120a24507bf27648d55ba15aa.g = color_map_329745c120a24507bf27648d55ba15aa.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_329745c120a24507bf27648d55ba15aa.g.selectAll("rect")
+        .data(color_map_329745c120a24507bf27648d55ba15aa.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_329745c120a24507bf27648d55ba15aa.x(color_map_329745c120a24507bf27648d55ba15aa.color.domain()[i - 1]) : color_map_329745c120a24507bf27648d55ba15aa.x.range()[0],
+            x1: i < color_map_329745c120a24507bf27648d55ba15aa.color.domain().length ? color_map_329745c120a24507bf27648d55ba15aa.x(color_map_329745c120a24507bf27648d55ba15aa.color.domain()[i]) : color_map_329745c120a24507bf27648d55ba15aa.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 10)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_329745c120a24507bf27648d55ba15aa.g.call(color_map_329745c120a24507bf27648d55ba15aa.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text('Population living in areas where elevation is below 5 meters (% of total population)');
+    
+        function geo_json_60e9a57225274771a6b123db03c95a9e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#000000", "fillColor": "#ffffff", "fillOpacity": 0.1, "weight": 0.1};
+            }
+        }
+        function geo_json_60e9a57225274771a6b123db03c95a9e_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#000000", "fillColor": "#000000", "fillOpacity": 0.5, "weight": 0.1};
+            }
+        }
+
+        function geo_json_60e9a57225274771a6b123db03c95a9e_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_60e9a57225274771a6b123db03c95a9e.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_60e9a57225274771a6b123db03c95a9e_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_60e9a57225274771a6b123db03c95a9e = L.geoJson(null, {
+                onEachFeature: geo_json_60e9a57225274771a6b123db03c95a9e_onEachFeature,
+            
+                style: geo_json_60e9a57225274771a6b123db03c95a9e_styler,
+        });
+
+        function geo_json_60e9a57225274771a6b123db03c95a9e_add (data) {
+            geo_json_60e9a57225274771a6b123db03c95a9e
+                .addData(data)
+                .addTo(map_ccc556ea5fcb44daa228910ab75f1fab);
+        }
+            geo_json_60e9a57225274771a6b123db03c95a9e_add({"bbox": [-64.75401429999994, 18.382386000000054, -64.27279699999997, 18.74957960000006], "features": [{"bbox": [-64.41450079999998, 18.698915000000056, -64.27279699999997, 18.74957960000006], "geometry": {"coordinates": [[[-64.31613089999996, 18.743435600000055], [-64.28775009999998, 18.723201300000028], [-64.27279699999997, 18.704521400000033], [-64.28859869999997, 18.698915000000056], [-64.32168459999997, 18.71661880000005], [-64.34846469999997, 18.71731070000004], [-64.38847919999995, 18.727097800000024], [-64.39939329999999, 18.722580700000037], [-64.41450079999998, 18.738636400000075], [-64.38235619999995, 18.748511500000063], [-64.34507019999995, 18.74167570000003], [-64.33513369999997, 18.74957960000006], [-64.31613089999996, 18.743435600000055]]], "type": "Polygon"}, "id": "13186", "properties": {"0": 4.0, "1": 33.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 89.189, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "EN_POP_EL5M_ZS": 96.4, "GAD_ID_0": "VG000039", "GAD_ID_1": "39503", "GAUL_0": 39, "GAUL_1": 39503, "GAUL_2": 68746, "HASC_0": "VG", "HASC_1": null, "HASC_2": null, "ISO_A2": "VG", "ISO_A3": "VGB", "LAST_UPDTE": "20171231", "NAM_0": "British Virgin Islands (U.K.)", "NAM_0_Alt": null, "NAM_1": "Anegada", "NAM_1_GAUL": "Anegada", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14382, "SOVEREIGN": "GBR", "Shape_Area": 0.00341276277087, "Shape_Le_1": 0.36890663489, "Shape_Le_2": 0.36890663489, "Shape_Leng": 0.36890663489, "WB_A3": "VGB", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 37.0, "mean": 87.155, "row_number": 13277, "worldpop_den": 224.55, "worldpop_num": 216.47}, "type": "Feature"}, {"bbox": [-64.75401429999994, 18.435038000000077, -64.72224049899995, 18.457502700000077], "geometry": {"coordinates": [[[-64.75262509899994, 18.457502700000077], [-64.72825629899995, 18.454205700000045], [-64.72224049899995, 18.44459500000005], [-64.73641639799996, 18.435038000000077], [-64.75401429999994, 18.442830000000072], [-64.75262509899994, 18.457502700000077]]], "type": "Polygon"}, "id": "13187", "properties": {"0": 5.0, "1": 0.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 0.0, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "EN_POP_EL5M_ZS": 5.94, "GAD_ID_0": "VG000039", "GAD_ID_1": "39504", "GAUL_0": 39, "GAUL_1": 39504, "GAUL_2": 68747, "HASC_0": "VG", "HASC_1": null, "HASC_2": null, "ISO_A2": "VG", "ISO_A3": "VGB", "LAST_UPDTE": "20171231", "NAM_0": "British Virgin Islands (U.K.)", "NAM_0_Alt": null, "NAM_1": "Jost van Dyke", "NAM_1_GAUL": "Jost van Dyke", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14383, "SOVEREIGN": "GBR", "Shape_Area": 0.00080031951582, "Shape_Le_1": 0.266346282033, "Shape_Le_2": 0.266346282033, "Shape_Leng": 0.266346282033, "WB_A3": "VGB", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 5.0, "mean": 4.694, "row_number": 13278, "worldpop_den": 187.0, "worldpop_num": 11.11}, "type": "Feature"}, {"bbox": [-64.67770299999995, 18.382386000000054, -64.55328919999994, 18.489668600000073], "geometry": {"coordinates": [[[[-64.56362299999995, 18.459176400000047], [-64.55328919999994, 18.441841500000066], [-64.57918939899997, 18.413761000000022], [-64.59039139999999, 18.411837500000047], [-64.60880639999993, 18.425306300000045], [-64.61764339999996, 18.40589310000007], [-64.67096729999997, 18.382386000000054], [-64.67770299999995, 18.401529200000027], [-64.66616309999995, 18.418752400000074], [-64.65939129999998, 18.44433900000007], [-64.64238429999995, 18.453761299000064], [-64.59225449999997, 18.44566560000004], [-64.56362299999995, 18.459176400000047]]], [[[-64.57829809999998, 18.489668600000073], [-64.55775069999999, 18.47291270000005], [-64.57284029999994, 18.46832950000004], [-64.57829809999998, 18.489668600000073]]]], "type": "MultiPolygon"}, "id": "13188", "properties": {"0": 54.0, "1": 2.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 3.5709999999999997, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "EN_POP_EL5M_ZS": 2.6, "GAD_ID_0": "VG000039", "GAD_ID_1": "39506", "GAUL_0": 39, "GAUL_1": 39506, "GAUL_2": 68749, "HASC_0": "VG", "HASC_1": null, "HASC_2": null, "ISO_A2": "VG", "ISO_A3": "VGB", "LAST_UPDTE": "20171231", "NAM_0": "British Virgin Islands (U.K.)", "NAM_0_Alt": null, "NAM_1": "Tortola", "NAM_1_GAUL": "Tortola", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14385, "SOVEREIGN": "GBR", "Shape_Area": 0.00599411302982, "Shape_Le_1": 1.35516053898, "Shape_Le_2": 1.35516053898, "Shape_Leng": 1.35516053898, "WB_A3": "VGB", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 56.0, "mean": 3.231, "row_number": 13280, "worldpop_den": 18827.12, "worldpop_num": 488.85}, "type": "Feature"}, {"bbox": [-64.44368589999993, 18.429847000000052, -64.38029539999997, 18.50458230000004], "geometry": {"coordinates": [[[-64.39727749999997, 18.50458230000004], [-64.38029539999997, 18.489192200000048], [-64.39134739999997, 18.46883260000004], [-64.40535579999994, 18.468780200000026], [-64.42603699999995, 18.458454300000028], [-64.42814089999996, 18.429847000000052], [-64.44368589999993, 18.432829500000025], [-64.43910789999995, 18.461995100000024], [-64.41912579999996, 18.464529800000037], [-64.41069979999997, 18.500117200000034], [-64.39727749999997, 18.50458230000004]]], "type": "Polygon"}, "id": "13189", "properties": {"0": 16.0, "1": 1.0, "ADM_LEVEL": "2", "AG_LND_EL5M_ZS": 5.882, "DATA_DATE": "20150000", "DATA_SRC": "GAUL", "EN_POP_EL5M_ZS": 7.97, "GAD_ID_0": "VG000039", "GAD_ID_1": "39507", "GAUL_0": 39, "GAUL_1": 39507, "GAUL_2": 68750, "HASC_0": "VG", "HASC_1": null, "HASC_2": null, "ISO_A2": "VG", "ISO_A3": "VGB", "LAST_UPDTE": "20171231", "NAM_0": "British Virgin Islands (U.K.)", "NAM_0_Alt": null, "NAM_1": "Virgin Gorda", "NAM_1_GAUL": "Virgin Gorda", "NAM_1_NTVE": null, "NAM_1_SRCE": null, "NAM_1_STAT": null, "NAM_1_WIKI": null, "NAM_2": "Administrative unit not available", "NAM_2_GAUL": "Administrative unit not available", "NAM_2_NTVE": null, "NAM_2_SRCE": null, "NAM_2_STAT": null, "NAM_2_WIKI": null, "OBJECTID": 14386, "SOVEREIGN": "GBR", "Shape_Area": 0.00210366883809, "Shape_Le_1": 0.802538379073, "Shape_Le_2": 0.802538379073, "Shape_Leng": 0.802538379073, "WB_A3": "VGB", "WB_REGION": "Other", "WB_STATUS": "UK Non-Self-Governing Territory", "area": 17.0, "mean": 5.026, "row_number": 13281, "worldpop_den": 2885.78, "worldpop_num": 230.03}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_60e9a57225274771a6b123db03c95a9e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["row_number", "NAM_2", "NAM_1", "NAM_0", "EN_POP_EL5M_ZS", "mean", "worldpop_num", "worldpop_den", "area"];
+    let aliases = ["District number: ", "District name: ", "State: ", "Country: ", "Population living in areas where elevation is below 5 meters (% of total population): ", "mean", "worldpop_num", "worldpop_den", "Total area (km2)"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "parseHtml": true, "sticky": true});
+                     
+    
+            var layer_control_70603f6d66ec49bd8caccd5ac5bd81db = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_1cdcd770ef824710906428d92b5889e3,
+                    "cartodbpositron" : tile_layer_635fce489398457183e51fe25924a97b,
+                    "openstreetmap" : tile_layer_6d58a4329be84a30b3283dc37bf234e6,
+                    "stamenwatercolor" : tile_layer_a6af55a385a849cb838c9e5cda222773,
+                },
+                overlays :  {
+                    "choropleth" : choropleth_0831b205fa3249c6b547d81fb2336ac8,
+                },
+            };
+            L.control.layers(
+                layer_control_70603f6d66ec49bd8caccd5ac5bd81db.base_layers,
+                layer_control_70603f6d66ec49bd8caccd5ac5bd81db.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ccc556ea5fcb44daa228910ab75f1fab);
+            tile_layer_635fce489398457183e51fe25924a97b.remove();
+            tile_layer_6d58a4329be84a30b3283dc37bf234e6.remove();
+            tile_layer_a6af55a385a849cb838c9e5cda222773.remove();
+        
+</script>
